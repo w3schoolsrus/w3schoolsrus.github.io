@@ -64,23 +64,16 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript Массивы</h2>
+
+<p>Избегайте использования new Array(). Вместо этого используйте [].</p>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+//const points = new Array(40, 100, 1, 5, 25, 10);
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points[0];
 </script>
 
 </body>

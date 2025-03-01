@@ -64,27 +64,18 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript Комментарии</h2>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+var x = 5;    // Объявите x, присвойте ему значение 5
+var y = x + 2;  // Объявите y, дайте ему значение x + 2
+// Напишите y в демо:
+document.getElementById("demo").innerHTML = y;
 </script>
 
 </body>
-</html>
 </textarea>
         <!--/Код на странице-->
       </div>

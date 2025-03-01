@@ -64,23 +64,21 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript Глобальные функции</h2>
+<h2>parseInt()</h2>
+<p>Глобальная JavaScript функция parseInt() преобразует строки в числа:</p>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+document.getElementById("demo").innerHTML =
+  parseInt("-10") + "<br>" +
+  parseInt("-10.33") + "<br>" +
+  parseInt("10") + "<br>" +
+  parseInt("10.33") + "<br>" +
+  parseInt("10 6") + "<br>" +
+  parseInt("10 years") + "<br>" +
+  parseInt("years 10");
 </script>
 
 </body>
@@ -97,5 +95,8 @@ function loadDoc() {
   </div>
 </div>
 <script src='../scripts/tryit_html_end.js'></script>
+<!-- auto GoogleAd -->
+<script data-ad-client="ca-pub-4060216941760396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- / auto GoogleAd -->
 </body>
 </html>

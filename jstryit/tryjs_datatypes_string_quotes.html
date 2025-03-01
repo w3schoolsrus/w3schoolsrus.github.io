@@ -64,23 +64,19 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript Строки</h2>
+
+<p>Строки пишутся в кавычках. Вы можете использовать одинарные или двойные кавычки:</p>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+
+document.getElementById("demo").innerHTML =
+carName1 + "<br>" + 
+carName2; 
 </script>
 
 </body>

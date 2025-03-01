@@ -64,22 +64,17 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript const</h2>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
+try {
+  const PI = 3.141592653589793;
+  PI = 3.14;
+}
+catch (err) {
+  document.getElementById("demo").innerHTML = err;
 }
 </script>
 

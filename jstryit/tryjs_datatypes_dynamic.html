@@ -64,23 +64,18 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript Типы данных</h2>
+
+<p>В JavaScript есть динамические типы. Это означает, что одна и та же переменная может использоваться для хранения разных типов данных:</p>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+var x;         // Теперь x не определено
+x = 5;         // Теперь x - это число
+x = "John";    // Теперь x - это строка
+
+document.getElementById("demo").innerHTML = x;
 </script>
 
 </body>

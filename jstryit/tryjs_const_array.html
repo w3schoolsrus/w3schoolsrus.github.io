@@ -64,23 +64,24 @@
 <html>
 <body>
 
-<div id="demo">
-<h2>Объект XMLHttpRequest</h2>
-<button type="button" onclick="loadDoc()">Изменить содержимое</button>
-</div>
+<h2>JavaScript const</h2>
+
+<p>Объявление постоянного массива НЕ делает элементы неизменяемыми:</p>
+
+<p id="demo"></p>
 
 <script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}
+// Создать массив:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Изменить элемент:
+cars[0] = "Toyota";
+
+// Добавить элемент:
+cars.push("Audi");
+
+// Отобразить массив:
+document.getElementById("demo").innerHTML = cars;
 </script>
 
 </body>

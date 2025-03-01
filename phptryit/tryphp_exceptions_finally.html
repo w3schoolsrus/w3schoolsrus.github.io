@@ -63,9 +63,20 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+function divide($dividend, $divisor) {
+  if($divisor == 0) {
+    throw new Exception("Деление на ноль");
+  }
+  return $dividend / $divisor;
+}
 
-var_dump(json_decode($jsonobj));
+try {
+  echo divide(5, 0);
+} catch(Exception $e) {
+  echo "Невозможно разделить. ";
+} finally {
+  echo "Процесс завершен.";
+}
 ?>
 
 </body>
@@ -82,7 +93,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Невозможно разделить. Процесс завершен.
                 </div>
             </div>
         </div>

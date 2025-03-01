@@ -63,9 +63,26 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+class Fruit {
+  public $name;
+  public $color;
+  public $weight;
 
-var_dump(json_decode($jsonobj));
+  function set_name($n) { // публичная функция (по умолчанию)
+    $this->name = $n;
+  }
+  protected function set_color($n) { // защищенная функция
+    $this->color = $n;
+  }
+  private function set_weight($n) { // частная функция
+    $this->weight = $n;
+  }
+}
+
+$mango = new Fruit();
+$mango->set_name('Mango'); // OK
+$mango->set_color('Yellow'); // ERROR
+$mango->set_weight('300'); // ERROR
 ?>
 
 </body>
@@ -82,7 +99,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    &nbsp;
                 </div>
             </div>
         </div>

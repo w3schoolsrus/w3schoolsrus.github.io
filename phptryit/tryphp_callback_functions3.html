@@ -63,9 +63,22 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+function exclaim($str) {
+  return $str . "! ";
+}
 
-var_dump(json_decode($jsonobj));
+function ask($str) {
+  return $str . "? ";
+}
+
+function printFormatted($str, $format) {
+  // Вызов функции обратного вызова $format
+  echo $format($str);
+}
+
+// Передайте exclaim и ask как функции обратного вызова printFormatted()
+printFormatted("Hello world", "exclaim");
+printFormatted("Hello world", "ask");
 ?>
 
 </body>
@@ -82,7 +95,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Hello world! Hello world?
                 </div>
             </div>
         </div>

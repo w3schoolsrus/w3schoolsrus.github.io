@@ -63,9 +63,45 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+// Родительский класс
+abstract class Car {
+  public $name;
+  public function __construct($name) {
+    $this->name = $name;
+  }
+  abstract public function intro() : string;
+}
 
-var_dump(json_decode($jsonobj));
+// Дочерние классы
+class Audi extends Car {
+  public function intro() : string {
+    return "Choose German quality! I'm an $this->name!";
+  }
+}
+
+class Volvo extends Car {
+  public function intro() : string {
+    return "Proud to be Swedish! I'm a $this->name!";
+  }
+}
+
+class Citroen extends Car {
+  public function intro() : string {
+    return "French extravagance! I'm a $this->name!";
+  }
+}
+
+// Создавать объекты из дочерних классов
+$audi = new audi("Audi");
+echo $audi->intro();
+echo "<br>";
+
+$volvo = new volvo("Volvo");
+echo $volvo->intro();
+echo "<br>";
+
+$citroen = new citroen("Citroen");
+echo $citroen->intro();
 ?>
 
 </body>
@@ -82,7 +118,9 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Choose German quality! I'm an Audi!<br>
+                    Proud to be Swedish! I'm a Volvo!<br>
+                    French extravagance! I'm a Citroen!
                 </div>
             </div>
         </div>

@@ -63,9 +63,9 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
-
-var_dump(json_decode($jsonobj));
+$d1=strtotime("July 04");
+$d2=ceil(($d1-time())/60/60/24);
+echo "Осталось " . $d2 ." дней до 4 Июля.";
 ?>
 
 </body>
@@ -82,7 +82,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Осталось 130 дней до 4 Июля.
                 </div>
             </div>
         </div>

@@ -63,9 +63,29 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+abstract class ParentClass {
+  // Абстрактный метод с аргументом
+  abstract protected function prefixName($name);
+}
 
-var_dump(json_decode($jsonobj));
+class ChildClass extends ParentClass {
+  // Дочерний класс может определять необязательные аргументы, которых нет в родительском абстрактном методе
+  public function prefixName($name, $separator = ".", $greet = "Dear") {
+    if ($name == "John Doe") {
+      $prefix = "Mr";
+    } elseif ($name == "Jane Doe") {
+      $prefix = "Mrs";
+    } else {
+      $prefix = "";
+    }
+    return "{$greet} {$prefix}{$separator} {$name}";
+  }
+}
+
+$class = new ChildClass;
+echo $class->prefixName("John Doe");
+echo "<br>";
+echo $class->prefixName("Jane Doe");
 ?>
 
 </body>
@@ -82,7 +102,8 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Dear Mr. John Doe<br>
+                    Dear Mrs. Jane Doe
                 </div>
             </div>
         </div>

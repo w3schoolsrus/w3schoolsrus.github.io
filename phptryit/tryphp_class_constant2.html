@@ -63,9 +63,15 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+class Goodbye {
+  const LEAVING_MESSAGE = "Спасибо за посещение W3Schools!";
+  public function byebye() {
+    echo self::LEAVING_MESSAGE;
+  }
+}
 
-var_dump(json_decode($jsonobj));
+$goodbye = new Goodbye();
+$goodbye->byebye();
 ?>
 
 </body>
@@ -82,7 +88,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Спасибо за посещение W3Schools!
                 </div>
             </div>
         </div>

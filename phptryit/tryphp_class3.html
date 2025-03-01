@@ -63,9 +63,32 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+class Fruit {
+  // Свойства
+  public $name;
+  public $color;
 
-var_dump(json_decode($jsonobj));
+  // Методы
+  function set_name($name) {
+    $this->name = $name;
+  }
+  function get_name() {
+    return $this->name;
+  }
+  function set_color($color) {
+    $this->color = $color;
+  }
+  function get_color() {
+    return $this->color;
+  }
+}
+
+$apple = new Fruit();
+$apple->set_name('Apple');
+$apple->set_color('Red');
+echo "Name: " . $apple->get_name();
+echo "<br>";
+echo "Color: " .  $apple->get_color();
 ?>
 
 </body>
@@ -82,7 +105,8 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Name: Apple<br>
+                    Color: Red
                 </div>
             </div>
         </div>

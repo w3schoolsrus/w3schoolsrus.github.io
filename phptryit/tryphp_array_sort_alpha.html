@@ -63,9 +63,14 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+$cars = array("Volvo", "BMW", "Toyota");
+sort($cars);
 
-var_dump(json_decode($jsonobj));
+$clength = count($cars);
+for($x = 0; $x < $clength; $x++) {
+  echo $cars[$x];
+  echo "<br>";
+}
 ?>
 
 </body>
@@ -82,7 +87,9 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    BMW<br>
+                    Toyota<br>
+                    Volvo
                 </div>
             </div>
         </div>

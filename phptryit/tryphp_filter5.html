@@ -63,9 +63,13 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+$ip = "127.0.0.1";
 
-var_dump(json_decode($jsonobj));
+if (!filter_var($ip, FILTER_VALIDATE_IP) === false) {
+  echo("$ip действительный IP-адрес");
+} else {
+  echo("$ip не действительный IP-адрес");
+}
 ?>
 
 </body>
@@ -82,7 +86,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    127.0.0.1 действительный IP-адрес
                 </div>
             </div>
         </div>

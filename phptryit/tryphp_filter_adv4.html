@@ -63,9 +63,12 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+// Переменная для проверки
+$str = "<h1>Hello WorldÆØÅ!</h1>";
 
-var_dump(json_decode($jsonobj));
+// Удалите HTML-теги и все символы со значением ASCII > 127
+$newstr = filter_var($str, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+echo $newstr;
 ?>
 
 </body>
@@ -82,7 +85,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Hello World!
                 </div>
             </div>
         </div>

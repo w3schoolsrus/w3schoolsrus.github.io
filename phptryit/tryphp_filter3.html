@@ -63,9 +63,13 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+$int = 100;
 
-var_dump(json_decode($jsonobj));
+if (!filter_var($int, FILTER_VALIDATE_INT) === false) {
+  echo("Целое число действительно");
+} else {
+  echo("Целое число не действительно");
+}
 ?>
 
 </body>
@@ -82,7 +86,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Целое число действительно
                 </div>
             </div>
         </div>

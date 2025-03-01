@@ -63,9 +63,19 @@
 <body>
 
 <?php
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+class Fruit {
+  public $name;
+  public $color;
 
-var_dump(json_decode($jsonobj));
+  function __construct($name) {
+    $this->name = $name;
+  }
+  function __destruct() {
+    echo "Фрукт - {$this->name}.";
+  }
+}
+
+$apple = new Fruit("яблоко");
 ?>
 
 </body>
@@ -82,7 +92,7 @@ var_dump(json_decode($jsonobj));
             <div id="runloadercontainer"><div id="runloader"></div></div>
             <div id="iframewrapper">
                 <div id="iframeResult" style="white-space:nowrap;overflow:auto;">
-                    object(stdClass)#1 (3) { ["Peter"]=> int(35) ["Ben"]=> int(37) ["Joe"]=> int(43) }
+                    Фрукт - яблоко.
                 </div>
             </div>
         </div>

@@ -11,16 +11,8 @@
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
 <meta property='og:description' content='W3Schools на русском предлагает бесплатные онлайн-уроки, учебные и справочные материалы, задачи и упражнения на большинстве языках программирования и создания веб-сайтов. Охватывает наиболее популярные технологии, такие как HTML, CSS, JavaScript, PHP, Python, SQL, Java, C++, C#, Kotlin, Go, фреймворки Bootstrap, W3.CSS и многие другие'>
-<!-- adauto-websunsey--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!-- / adauto-websunsey-->
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
-<meta name='description' content='JavaScript Учебник. Бесплатные курсы онлайн по языку программирования JavaScript. Примеры кода. Тесты и задачи. Полный справочник JavaScript. Уроки для начинающих. W3Schools на русском'>
-<link rel='stylesheet' href='../styles/bigbtn.css'>
-<style>
-    #clickgame {overflow:auto;}
-    #clickgame div{color: #fff;background-color: #2196F3;line-height:120px;text-align:center;margin:5px;width:130px;float:left;cursor:pointer;}
-    #clickgame .redbtn{background-color: #dc3545;}
-    #clickgame .timediv{background-color:transparent;color: #000;font-size:20px;}
-</style>
+<title>JavaScript Арифметические операторы. Уроки для начинающих. W3Schools на русском</title>
+<meta name='description' content='JavaScript Арифметические операторы. Какие бывают арифметические операторы в языке программирования JavaScript и как они применяются? Сложение, вычитание, умножение, деление, возведение в степень, модуль, инкремент, декремент. Операторы и операнды. Уроки для начинающих. W3Schools на русском'>
 
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index.html'>W3schoolsRUS<span class='dotcom w3-hide-small'>. на русском</span></a>
@@ -422,7 +414,7 @@
             <a target='_top' href='js_htmldom_navigation.html'>DOM Навигация</a>
             <a target='_top' href='js_htmldom_nodes.html'>DOM Узлы</a>
             <a target='_top' href='js_htmldom_collections.html'>DOM Коллекции</a>
-            <a target='_top' href='js_htmldom_nodelist.html'>DOM Список узлов</a>
+            <a target='_top' href='js_htmldom_nodelist.html'>DOM Узловые списки</a>
             <br>
             <h2 class='left'>JS Браузер BOM</h2>
             <a target='_top' href='js_window.html'>JS Окно</a>
@@ -440,7 +432,7 @@
             <a target="_top" href="js_api_history.html">Веб-история API</a>
             <a target="_top" href="js_api_web_storage.html">Веб-хранилище API</a>
             <a target="_top" href="js_api_web_workers.html">Веб-воркер API</a>
-            <a target="_top" href="js_api_fetch.html">Web Fetch API</a>
+            <a target="_top" href="js_api_fetch.html">Веб-выборка API</a>
             <a target="_top" href="js_api_geolocation.html">Веб-геолокация API</a>
             <br>
             <h2 class='left'>JS AJAX</h2>
@@ -505,186 +497,692 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>            <a href='index.html'><img src='../svg/js.svg' alt='JavaScript. W3Schools на русском. Уроки для начинающих' class='w3-left w3-padding' title='JavaScript для начинающих. W3Schools на русском' style='width: 120px'></a>
 
-    <p class='w3-right'>
-        <a href='index_en.html' title='Перейти на английский язык'>En</a>
-        <a href="https://w3schoolsua.github.io/js/index.html" target='_blank' title='Перейти на украинский язык'>Ua</a>
-    </p>
 <article>
-    <h1>JavaScript <span class='color_h1'>Учебник</span></h1>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
-    </div>
+  <h1>JavaScript <span class='color_h1'>Арифметические операторы</span></h1>
+  <div class='w3-clear nextprev'>
+    <a class='w3-left w3-btn' href='js_operators.html'>&#10094; Prev</a>
+    <a class='w3-right w3-btn' href='js_assignment.html'>Next &#10095;</a>
+  </div>
+  <hr>
 
-    <div class='w3-panel w3-info intro'>
-        <p><strong>JavaScript</strong> - это самый популярный язык программирования в мире.</p>
-        <p><strong>JavaScript</strong> - это язык программирования HTML-страниц и Web.</p>
-        <p><strong>JavaScript</strong> - это язык программирования, который легко выучить.</p>
-        <p>Этот учебник научит вас языку программирования <strong>JavaScript</strong> от базового уровня до профессионального.</p>
-        <a class='w3-btn shadow-black-1' href='js_intro.html'>Начать изучение JavaScript &raquo;</a>
-    </div>
-    <hr>
+  <h2>JavaScript Арифметические операторы</h2>
+  <p><strong>Арифметические операторы</strong> выполняют арифметику над числами (литералами или переменными).</p>
+
+  <table class='w3-table-all notranslate'>
+    <tr>
+      <th style='width:25%'>Оператор</th>
+      <th>Описание</th>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Сложение</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Вычитание</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Умножение</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>Возведение в степень (<a href='js_es6.html'>ES2016</a>)</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Деление</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Модуль (остаток от деления)</td>
+    </tr>
+    <tr>
+      <td>++</td>
+      <td>Инкремент (увеличение на 1)</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>Декремент (уменьшение на 1)</td>
+    </tr>
+  </table>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Как применяется JavaScript на веб-сайтах?</h2>
-    <div class='w3-example'>
-        <h3>Пример применения JavaScript</h3>
-        <p><span id='exampletext'>Нажмите синюю кнопку:</span></p>
-        <div class='w3-padding w3-white notranslate'>
-            <div id='clickgame'>
-                <div id='bluebtn'>Нажми меня</div>
-            </div>
-        </div>
+</div>  <h2>Арифметические операции</h2>
+  <p>Типичная <strong>арифметическая операция</strong> оперирует двумя числами.</p>
+  <p>Два числа могут быть литералами:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 100 + 50;
     </div>
-    <script async src='../scripts/ex_javascript_default.js'></script>
-
-    <h2>Примеры в каждом разделе</h2>
-    <p>С онлайн редактором <b>&quot;Попробуйте сами&quot;</b> на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a> вы можете редактировать исходящий код и просматривать результат.</p>
-    <div class='w3-example'>
-        <h3>Пример</h3>
-        <div class='w3-padding w3-white notranslate'>
-            <h2>Мой первый JavaScript</h2>
-            <button type='button' onclick="document.getElementById('demo').innerHTML=Date()">
-                Кликните меня, чтобы отобразить дату и время</button>
-            <p id='demo'></p>
-        </div>
-        <p>
-            <a target='_blank' class='w3-btn' href='../jstryit/tryjs_myfirst.html'>Попробуйте сами &raquo;</a>
-        </p>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetic_operation.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>или переменными:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = a + b;
     </div>
-    <hr>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetic_variables.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>или выражениями:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = (100 + 50) * a;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetic_expressions.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Рекомендуется использовать меню уроков</h2>
-    <p>Если вы новичок и только начинаете изучать язык программирования JavaScript, то рекомендуется изучать этот учебник JavaScript в последовательности тем, указанных в меню.</p>
-    <p>Если у вас большой экран (например, монитор компьютера), меню всегда будет слева.</p>
-    <p>Если у вас маленький экран (например, если вы пользуетесь смартфоном или планшетом), откройте меню, кликнув иконку верхнего меню <span class='w3-xlarge'>&#9776;</span>.</p>
-    <hr>
+</div>  <h2>Операторы и операнды</h2>
+  <p>Числа (в арифметической операции) называются <strong>операндами</strong>.</p>
+  <p>Операция (которая выполняется между двумя операндами) определяется <strong>оператором</strong>.</p>
 
-    <h2>Учитесь на примерах!</h2>
-    <p>Примеры - лучше 1000 слов. Примеры часто легче понять, чем текстовые пояснения.</p>
-    <p>Этот учебник дополняет все объяснения поясняющими примерами <b>&quot;Попробуйте сами&quot;</b>.</p>
-    <div class='w3-panel w3-note'>
-        <p>Если вы испытаете, как работают все примеры, вы узнаете много нового о JavaScript за очень короткое время!</p>
-        <a class='w3-btn'  href='js_examples.html' target='_blank'>JavaScript Примеры &raquo;</a>
-    </div>
-    <hr>
-
-    <h2>Зачем изучать JavaScript?</h2>
-    <p>JavaScript - это одна из <strong>3 технологий</strong>, которые <strong>должны</strong> выучить и знать все веб-разработчики:</p>
-    <p>&nbsp;&nbsp; 1. <a href='../html/index.html' title='Уроки по HTML'><strong>HTML</strong></a> для определения содержания веб-страниц</p>
-    <p>&nbsp;&nbsp; 2. <a href='../css/index.html' title='Уроки по CSS'><strong>CSS</strong></a> для создания макета веб-страниц</p>
-    <p>&nbsp;&nbsp; 3. <a href='../js/js_intro.html' title='Уроки по JavaScript'><strong>JavaScript</strong></a> для программирования поведения веб-страниц</p>
-    <hr>
-    <p><b>Примечание.</b> Веб-страницы - это не единственное применение, где используется JavaScript. Многие настольные и серверные программы используют JavaScript. Платформа <strong>Node.js</strong> является самым известным приложением для выполнения высокопроизводительных сетевых приложений. Некоторые базы данных, такие как <strong>MongoDB</strong> и <strong>CouchDB</strong>, также используют JavaScript в качестве языка программирования.</p>
-    <hr>
-    <div class='w3-panel w3-note'>
-        <h3>Необходимо знать, что...</h3>
-        <p>JavaScript и <a href='../java/index.html'>Java</a> - это абсолютно разные языки программирования, как по концепции,
-            так и по дизайну.</p>
-        <p>Язык JavaScript был создан Бренданом Айхом в 1995 году, который стал стандартом ECMA в 1997 году.
-            <strong>ECMA-262</strong> является официальным названием стандарта. <strong>ECMAScript</strong> - это официальное название языка.</p>
-        <p>Вы можете прочитать больше о разных версиях JavaScript в разделе <a href='js_versions.html'>JS Версии</a>.</p>
-    </div>
-    <hr>
+  <table class='w3-table-all'>
+    <tr>
+      <th>Операнд</th>
+      <th>Оператор</th>
+      <th>Операнд</th>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>+</td>
+      <td>50</td>
+    </tr>
+  </table>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Скорость обучения</h2>
-    <p>В этом учебнике скорость обучения полностью зависит от вас. Сколько времени вы захотите уделять учебе - столько и уделяйте.</p>
-    <p>Все зависит от ваших целей, желаний и возможностей.</p>
-    <p>Если вы испытываете трудности в обучении, то сделайте небольшой перерыв в учебе или перечитайте материал повторно.</p>
-    <p><strong>Всегда</strong> убеждайтесь в том, что вы полностью разобрались и понимаете <strong>все</strong> примеры, приведённые в онлайн-редакторе &quot;Попробуйте сами&quot;.</p>
-    <p>Единственный способ стать профессиональным программистом - это: Практика. Практика. И ещё практика. Код. Код. И ещё много кода!</p>
-    <hr>
-
-    <form autocomplete='off' spellcheck='false' id='w3-exerciseform' action='https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1' method='post' target='_blank'>
-        <h2 class='shadow-black-1'>Проверьте себя с помощью упражнений</h2>
-        <div class='exercisewindow'>
-            <h2>Упражнение:</h2>
-            <p>Создайте переменную с именем <code class='w3-codespan'>carName</code> и присвойте ей значение <code class='w3-codespan'>Volvo</code>.</p>
-            <div class='exerciseprecontainer'>
-<pre>
-var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' maxlength='5' style='width: 60px;'>";
-</pre>
-            </div>
-            <br>
-            <button type='submit' class='w3-btn w3-margin-bottom'>Отправить ответ &raquo;</button>
-        </div>
-    </form>
-    <hr>
-    <h2>Распространённые вопросы</h2>
-    <ul>
-        <li><strong>Как получить JavaScript?</strong></li>
-        <li><strong>Где я могу скачать JavaScript?</strong></li>
-        <li><strong>Является ли JavaScript бесплатным?</strong></li>
-    </ul>
-    <div class='w3-panel w3-amber'>
-    <p><b>Вам не нужно где-то искать или скачивать JavaScript.</b></p>
-    <p><b>JavaScript уже запущен в вашем браузере на компьютере, планшете или смартфоне.</b></p>
-    <p><b>JavaScript можно использовать бесплатно. Он доступен для всех пользователей.</b></p>
+</div>  <h2>Сложение</h2>
+  <p>Оператор <strong>сложения</strong> (<code class='w3-codespan'>+</code>) складывает числа:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var y = 2;<br>
+      var z = x + y;
     </div>
-    <hr>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_add.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+
+  <h2>Вычитание</h2>
+  <p>Оператор <strong>вычитания</strong> (<code class='w3-codespan'>-</code>) вычитает числа.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var y = 2;<br>
+      var z = x - y;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_sub.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>JavaScript Справочники</h2>
-    <p>W3Schools содержит <strong>полный справочник по JavaScript</strong>, включая все объекты HTML и браузера.</p>
-    <p>Справочник содержит примеры всех свойств, методов и событий и постоянно обновляется в соответствии с последними веб-стандартов.</p>
-    <a class='w3-btn shadow-black-1' href='../jsref/index.html'>Полный справочник JavaScript &raquo;</a>
-    <hr>
-
-    <h2>JavaScript Проверочная Викторина</h2>
-    <p>Проверьте свои знания и навыки JavaScript на W3Schools!</p>
-    <p><a href='js_quiz.html' class='w3-button w3-blue shadow-black-1'>Начать JavaScript Викторину!</a></p>
-    <hr>
-
-    <h2>Здайте JavaScript экзамен - получите свой Диплом!</h2>
-    <div class='w3-row'>
-    <div class='w3-third w3-container w3-padding-24'><a href='../cert/index.html'><img
-                    src='../images/w3certified_logo_250.png' style='max-width:100%;' alt='Онлайн W3Schools Сертификация'/></a>
+</div>  <h2>Умножение</h2>
+  <p>Оператор <strong>умножения</strong> (<code class='w3-codespan'>*</code>) умножает числа.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var y = 2;<br>
+      var z = x * y;
     </div>
-    <div class='w3-twothird w3-container'><h2>Онлайн Сертификация W3Schools</h2>
-        <p>Идеальное решение для профессионалов, которым необходимо сбалансировать работу, семью и карьеру.</p>
-        <p>Больше 25 000 сертификатов уже выдано!</p>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_mult.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+
+  <h2>Деление</h2>
+  <p>Оператор <strong>деления</strong> (<code class='w3-codespan'>/</code>) делит числа.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var y = 2;<br>
+      var z = x / y;
     </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_div.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Остаток</h2>
+  <p>Оператор <strong>модуля</strong> (<code class='w3-codespan'>%</code>) возвращает остаток от деления.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var y = 2;<br>
+      var z = x % y;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_mod.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <div class='w3-container w3-note'>
+    <p>В арифметике деление двух целых чисел дает <strong>частное</strong> и <strong>остаток</strong>.<br>
+      В математике результатом <strong>операции по модулю</strong> является <strong>остаток</strong> арифметического деления.</p>
+  </div>
+  <hr>
+  <h2>Приращение (инкрементинг)</h2>
+  <p>Оператор <strong>инкремент</strong> (<code class='w3-codespan'>++</code>) увеличивает число.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>x++;<br>var z = x;</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_increment.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Уменьшение (декрементинг)</h2>
+  <p>Оператор <strong>декремент</strong> (<code class='w3-codespan'>--</code>) уменьшает число.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      x--;<br>
+      var z = x;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_oper_decrement.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+
+  <h2>Возведение в степень</h2>
+  <p>Оператор <strong>возведения в степень</strong> (<code class='w3-codespan'>**</code>) возводит первый операнд в степень второго операнда.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var z = x ** 2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // результат 25
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetric_exponent1.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+
+  <p>x ** y дает тот же результат, что и <code class='w3-codespan'>Math.pow(x,y)</code>:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>
+      var z =
+      Math.pow(x,2);&nbsp;&nbsp; // результат 25
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetric_exponent2.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Приоритет оператора</h2>
+  <p>Приоритет оператора описывает порядок выполнения операций в арифметическом выражении.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 100 + 50 * 3;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetic_precedence1.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+
+  <p>Результат примера выше такой же, как 150 * 3, или он такой же, как 100 + 150?</p>
+  <p>Сначала выполняется сложение или умножение?</p>
+  <p>Как и в традиционной школьной математике, умножение делается первым.</p>
+  <p>Умножение (<code class='w3-codespan'>*</code>) и деление (<code class='w3-codespan'>/</code>) имеют более высокий <strong>приоритет</strong>, чем сложение (<code class='w3-codespan'>+</code>) и вычитание (<code class='w3-codespan'>-</code>).</p>
+  <p>И (также как в школьной математике) приоритет можно изменить с помощью скобок:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = (100 + 50) * 3;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetic_precedence2.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>При использовании скобок, операции внутри скобок вычисляются первыми.</p>
+  <p>Когда несколько операций имеют одинаковый приоритет (например, сложение и вычитание), они вычисляются слева направо:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 100 + 50 - 3;
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_arithmetic_precedence3.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
-<p><a class='w3-btn shadow-black-1' href='../cert/index.html'>Получите Ваш Сертификат! &raquo;</a></p>
+  <h2>JavaScript Значения приоритета оператора</h2>
 
-<div class='refcont'>
-    <a class='bigbtn' href='../cert/cert_html.html'>HTML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_css.html'>CSS Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_javascript.html'>JavaScript Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_frontend.html'>Front End Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_python.html'>Python Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_datascience.html'>Наука о данных Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_jquery.html'>jQuery Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_sql.html'>SQL Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_php.html'>PHP Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_java.html'>Java Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_bootstrap.html'>Bootstrap Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_xml.html'>XML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_cybersecurity.html'>Кибербезопасность Сертификат</a>
-    <a class='bigbtn' href='../cert/career_tips.html'>IT-карьера</a>
-    <a class='bigbtn' href='../cert/career_cv.html'>IT-резюме</a>
-</div>    <hr>
-    <p><b>Примечание.</b> Также на сайте доступен ещё один <a href='../jslearn/index.html' target='_blank'><strong>онлайн учебник по языку программирования JavaScript</strong></a> - перевод на русский язык учебника из сайта
-        <a href='https://javascript.info/' target='_blank' rel='nofollow'>javascript.info</a>.</p>
-    <hr>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
+  <div class='w3-panel w3-warning'>
+    <p>Бледно-красные записи указывают на ECMAScript 2015 (ES6) или выше.</p>
+  </div>
+
+  <table class='w3-table-all'>
+    <tr>
+      <th style='width:10%'>Значение</th>
+      <th style='width:15%'>Оператор</th>
+      <th>Описание</th>
+      <th>Пример</th>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>( )</td>
+      <td>Группировка выражений</td>
+      <td>(3 + 4)</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>.</td>
+      <td>Член</td>
+      <td>person.name</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>[]</td>
+      <td>Член</td>
+      <td>person[&quot;name&quot;]</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>()</td>
+      <td>Вызов функции</td>
+      <td>myFunction()</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>new</td>
+      <td>Создание</td>
+      <td>new Date()</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>++</td>
+      <td>Постфиксный инкремент</td>
+      <td>i++</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>--</td>
+      <td>Постфиксный декремент</td>
+      <td>i--</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>++</td>
+      <td>Префикс инкремента</td>
+      <td>++i</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>--</td>
+      <td>Префикс декремента</td>
+      <td>--i</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>!</td>
+      <td>Не логический</td>
+      <td>!(x==y)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>typeof</td>
+      <td>Тип</td>
+      <td>typeof x</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr class='w3-pale-red'>
+      <td>15</td>
+      <td>**</td>
+      <td>Возведение в степень (ES2016)</td>
+      <td>10 ** 2</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>*</td>
+      <td>Умножение</td>
+      <td>10 * 5</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>/</td>
+      <td>Деление</td>
+      <td>10 / 5</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>%</td>
+      <td>Остаток от деления</td>
+      <td>10 % 5</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>+</td>
+      <td>Сложение</td>
+      <td>10 + 5</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>-</td>
+      <td>Вычитание</td>
+      <td>10 - 5</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>&lt;&lt;</td>
+      <td>Сдвиг влево</td>
+      <td>x &lt;&lt; 2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>&gt;&gt;</td>
+      <td>Сдвиг вправо</td>
+      <td>x &gt;&gt; 2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>&gt;&gt;&gt;</td>
+      <td>Сдвиг вправо (без знака)</td>
+      <td>x &gt;&gt;&gt; 2</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>&lt;</td>
+      <td>Меньше чем</td>
+      <td>x &lt; y&nbsp;</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>&lt;=</td>
+      <td>Меньше или равно</td>
+      <td>x &lt;= y</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>&gt;</td>
+      <td>Больше чем</td>
+      <td>x &gt; y</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>&gt;=</td>
+      <td>Больше или равно</td>
+      <td>x &gt;= y</td>
+    </tr>
+    <tr class='w3-pale-red'>
+      <td>11</td>
+      <td>in</td>
+      <td>Свойство в объекте</td>
+      <td>'PI' в Математике</td>
+    </tr>
+    <tr class='w3-pale-red'>
+      <td>11</td>
+      <td>instanceof</td>
+      <td>Экземпляр объекта</td>
+      <td>instanceof Array</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>==</td>
+      <td>Равно</td>
+      <td>x == y</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>===</td>
+      <td>Строгое равно</td>
+      <td>x === y</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>!=</td>
+      <td>Не равно</td>
+      <td>x != y</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>!==</td>
+      <td>Строгое не равно</td>
+      <td>x !== y</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>&amp;</td>
+      <td>Побитовое AND</td>
+      <td>x &amp; y</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>^</td>
+      <td>Побитовое XOR</td>
+      <td>x ^ y</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>|</td>
+      <td>Побитовое OR</td>
+      <td>x | y</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>&amp;&amp;</td>
+      <td>Логическое AND</td>
+      <td>x &amp;&amp; y</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>||</td>
+      <td>Логическое OR</td>
+      <td>x || y</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>? :</td>
+      <td>Условие</td>
+      <td>? 'Yes' : 'No'</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>+=</td>
+      <td>Присваивание</td>
+      <td>x += y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>/=</td>
+      <td>Присваивание</td>
+      <td>x /= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-=</td>
+      <td>Присваивание</td>
+      <td>x -= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>*=</td>
+      <td>Присваивание</td>
+      <td>x *= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>%=</td>
+      <td>Присваивание</td>
+      <td>x %= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>&lt;&lt;=</td>
+      <td>Присваивание</td>
+      <td>x &lt;&lt;= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>&gt;&gt;=</td>
+      <td>Присваивание</td>
+      <td>x &gt;&gt;= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>&gt;&gt;&gt;=</td>
+      <td>Присваивание</td>
+      <td>x &gt;&gt;&gt;= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>&amp;=</td>
+      <td>Присваивание</td>
+      <td>x &amp;= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>^=</td>
+      <td>Присваивание</td>
+      <td>x ^= y</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>|=</td>
+      <td>Присваивание</td>
+      <td>x |= y</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr class='w3-pale-red'>
+      <td>2</td>
+      <td>yield</td>
+      <td>Функция паузы</td>
+      <td>yield x</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>,</td>
+      <td>Запятая</td>
+      <td>5 , 6</td>
+    </tr>
+  </table>
+
+  <div class='w3-panel w3-note'>
+    <p>Выражения в скобках полностью вычисляются до того, как значение используется в остальной части выражения.</p>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <form autocomplete='off' spellcheck='false' id='w3-exerciseform' action='https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_operators2' method='post' target='_blank'>
+    <h2 class='shadow-black-1'>Проверьте себя с помощью упражнений</h2>
+    <div class='exercisewindow'>
+      <h2>Упражнение:</h2>
+      <p>Разделите <code class='w3-codespan'>10</code> на <code class='w3-codespan'>2</code> и выведите результат.</p>
+      <div class='exerciseprecontainer'>
+<pre>
+alert(10 <input name='ex1' maxlength='1' style='width: 15px;'> 2);
+</pre>
+      </div>
+      <br>
+      <button type='submit' class='w3-btn w3-margin-bottom'>Отправить ответ &raquo;</button>
     </div>
+  </form>
+  <hr>
+  <div class='w3-clear nextprev'>
+    <a class='w3-left w3-btn' href='js_operators.html'>&#10094; Prev</a>
+    <a class='w3-right w3-btn' href='js_assignment.html'>Next &#10095;</a>
+  </div>
 </article>
 <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
@@ -712,6 +1210,18 @@ var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' m
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- adrightbar_media_square -->
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="5246865704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>

@@ -11,16 +11,8 @@
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
 <meta property='og:description' content='W3Schools на русском предлагает бесплатные онлайн-уроки, учебные и справочные материалы, задачи и упражнения на большинстве языках программирования и создания веб-сайтов. Охватывает наиболее популярные технологии, такие как HTML, CSS, JavaScript, PHP, Python, SQL, Java, C++, C#, Kotlin, Go, фреймворки Bootstrap, W3.CSS и многие другие'>
-<!-- adauto-websunsey--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!-- / adauto-websunsey-->
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
-<meta name='description' content='JavaScript Учебник. Бесплатные курсы онлайн по языку программирования JavaScript. Примеры кода. Тесты и задачи. Полный справочник JavaScript. Уроки для начинающих. W3Schools на русском'>
-<link rel='stylesheet' href='../styles/bigbtn.css'>
-<style>
-    #clickgame {overflow:auto;}
-    #clickgame div{color: #fff;background-color: #2196F3;line-height:120px;text-align:center;margin:5px;width:130px;float:left;cursor:pointer;}
-    #clickgame .redbtn{background-color: #dc3545;}
-    #clickgame .timediv{background-color:transparent;color: #000;font-size:20px;}
-</style>
+<title>JavaScript Типы данных. Уроки для начинающих. W3Schools на русском</title>
+<meta name='description' content='JavaScript Типы данных. Переменные JavaScript могут содержать множество типов данных: числа, строки, объекты, массивы, булевы значения и многое другое. Концепция типов данных. Примеры кода. Уроки для начинающих. W3Schools на русском'>
 
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index.html'>W3schoolsRUS<span class='dotcom w3-hide-small'>. на русском</span></a>
@@ -422,7 +414,7 @@
             <a target='_top' href='js_htmldom_navigation.html'>DOM Навигация</a>
             <a target='_top' href='js_htmldom_nodes.html'>DOM Узлы</a>
             <a target='_top' href='js_htmldom_collections.html'>DOM Коллекции</a>
-            <a target='_top' href='js_htmldom_nodelist.html'>DOM Список узлов</a>
+            <a target='_top' href='js_htmldom_nodelist.html'>DOM Узловые списки</a>
             <br>
             <h2 class='left'>JS Браузер BOM</h2>
             <a target='_top' href='js_window.html'>JS Окно</a>
@@ -440,7 +432,7 @@
             <a target="_top" href="js_api_history.html">Веб-история API</a>
             <a target="_top" href="js_api_web_storage.html">Веб-хранилище API</a>
             <a target="_top" href="js_api_web_workers.html">Веб-воркер API</a>
-            <a target="_top" href="js_api_fetch.html">Web Fetch API</a>
+            <a target="_top" href="js_api_fetch.html">Веб-выборка API</a>
             <a target="_top" href="js_api_geolocation.html">Веб-геолокация API</a>
             <br>
             <h2 class='left'>JS AJAX</h2>
@@ -505,186 +497,409 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>            <a href='index.html'><img src='../svg/js.svg' alt='JavaScript. W3Schools на русском. Уроки для начинающих' class='w3-left w3-padding' title='JavaScript для начинающих. W3Schools на русском' style='width: 120px'></a>
 
-    <p class='w3-right'>
-        <a href='index_en.html' title='Перейти на английский язык'>En</a>
-        <a href="https://w3schoolsua.github.io/js/index.html" target='_blank' title='Перейти на украинский язык'>Ua</a>
-    </p>
 <article>
-    <h1>JavaScript <span class='color_h1'>Учебник</span></h1>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
+  <h1>JavaScript <span class='color_h1'>Типы данных</span></h1>
+  <div class='w3-clear nextprev'>
+    <a class='w3-left w3-btn' href='js_assignment.html'>&#10094; Prev</a>
+    <a class='w3-right w3-btn' href='js_functions.html'>Next &#10095;</a>
+  </div>
+  <hr>
+  <h2>JavaScript Типы данных</h2>
+  <p>Переменные JavaScript могут содержать множество <strong>типов данных</strong>: числа, строки, объекты и многое другое:</p>
+  <div class='w3-example'>
+    <div class='w3-code notranslate jsHigh'>
+      var length = 16;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Число<br>
+      var lastName = &quot;Johnson&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Строка<br>
+      var
+      x = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};&nbsp;&nbsp;&nbsp; // Объект
     </div>
-
-    <div class='w3-panel w3-info intro'>
-        <p><strong>JavaScript</strong> - это самый популярный язык программирования в мире.</p>
-        <p><strong>JavaScript</strong> - это язык программирования HTML-страниц и Web.</p>
-        <p><strong>JavaScript</strong> - это язык программирования, который легко выучить.</p>
-        <p>Этот учебник научит вас языку программирования <strong>JavaScript</strong> от базового уровня до профессионального.</p>
-        <a class='w3-btn shadow-black-1' href='js_intro.html'>Начать изучение JavaScript &raquo;</a>
-    </div>
-    <hr>
+  </div>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Как применяется JavaScript на веб-сайтах?</h2>
-    <div class='w3-example'>
-        <h3>Пример применения JavaScript</h3>
-        <p><span id='exampletext'>Нажмите синюю кнопку:</span></p>
-        <div class='w3-padding w3-white notranslate'>
-            <div id='clickgame'>
-                <div id='bluebtn'>Нажми меня</div>
-            </div>
-        </div>
-    </div>
-    <script async src='../scripts/ex_javascript_default.js'></script>
+</div>  <h2>Концепция типов данных</h2>
+  <p>В программировании типы данных являются важной концепцией.</p>
+  <p>Чтобы иметь возможность работать с переменными, важно знать о типе данных.</p>
+  <p>Без типов данных компьютер не может безопасно решить эту проблему:</p>
+  <div class='w3-example'>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 16 + &quot;Volvo&quot;;</div>
+  </div>
+  <p>Есть ли смысл добавлять &quot;Volvo&quot; к шестнадцати? Это приведёт к ошибке или покажет результат?</p>
+  <p>JavaScript будет обрабатывать приведенный выше пример как:</p>
+  <div class='w3-example'>
+    <div class='w3-code notranslate jsHigh'>
+      var x =
+      &quot;16&quot; + &quot;Volvo&quot;;</div>
+  </div>
 
-    <h2>Примеры в каждом разделе</h2>
-    <p>С онлайн редактором <b>&quot;Попробуйте сами&quot;</b> на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a> вы можете редактировать исходящий код и просматривать результат.</p>
-    <div class='w3-example'>
-        <h3>Пример</h3>
-        <div class='w3-padding w3-white notranslate'>
-            <h2>Мой первый JavaScript</h2>
-            <button type='button' onclick="document.getElementById('demo').innerHTML=Date()">
-                Кликните меня, чтобы отобразить дату и время</button>
-            <p id='demo'></p>
-        </div>
-        <p>
-            <a target='_blank' class='w3-btn' href='../jstryit/tryjs_myfirst.html'>Попробуйте сами &raquo;</a>
-        </p>
+  <div class='w3-panel w3-note'>
+    <p>При добавлении числа и строки JavaScript будет обрабатывать число как строку.</p>
+  </div>
+
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 16 + &quot;Volvo&quot;;</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_addstring.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = &quot;Volvo&quot; + 16;</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_addstring2.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>JavaScript определяет выражения слева направо. Разные последовательности могут давать разные результаты:</p>
+  <div class='w3-example'>
+    <h3>JavaScript:</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 16 + 4 + &quot;Volvo&quot;;
     </div>
-    <hr>
+
+    <p>Результат:</p>
+    <div class='w3-white w3-padding notranslate'>
+      <code>20Volvo</code>
+    </div>
+    <a class='w3-btn w3-margin-bottom w3-margin-top' href='../jstryit/tryjs_datatypes_addstrings_1.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <div class='w3-example'>
+    <h3>JavaScript:</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = &quot;Volvo&quot; + 16 + 4;
+    </div>
+
+    <p>Результат:</p>
+    <div class='w3-white w3-padding notranslate'>
+      <code>Volvo164</code>
+    </div>
+    <a class='w3-btn w3-margin-bottom w3-margin-top' href='../jstryit/tryjs_datatypes_addstrings_2.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>В первом примере JavaScript обрабатывает 16 и 4 как числа, пока не достигнет &quot;Volvo&quot;.</p>
+  <p>Во втором примере, поскольку первый операнд является строкой, все операнды обрабатываются как строки.</p>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Рекомендуется использовать меню уроков</h2>
-    <p>Если вы новичок и только начинаете изучать язык программирования JavaScript, то рекомендуется изучать этот учебник JavaScript в последовательности тем, указанных в меню.</p>
-    <p>Если у вас большой экран (например, монитор компьютера), меню всегда будет слева.</p>
-    <p>Если у вас маленький экран (например, если вы пользуетесь смартфоном или планшетом), откройте меню, кликнув иконку верхнего меню <span class='w3-xlarge'>&#9776;</span>.</p>
-    <hr>
+</div>  <h2>JavaScript Типы являются динамическими</h2>
+  <p>JavaScript имеет динамические типы. Это означает, что одна и та же переменная может использоваться для хранения разных типов данных (т.е. меняться при разных условиях):</p>
 
-    <h2>Учитесь на примерах!</h2>
-    <p>Примеры - лучше 1000 слов. Примеры часто легче понять, чем текстовые пояснения.</p>
-    <p>Этот учебник дополняет все объяснения поясняющими примерами <b>&quot;Попробуйте сами&quot;</b>.</p>
-    <div class='w3-panel w3-note'>
-        <p>Если вы испытаете, как работают все примеры, вы узнаете много нового о JavaScript за очень короткое время!</p>
-        <a class='w3-btn'  href='js_examples.html' target='_blank'>JavaScript Примеры &raquo;</a>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Здесь x не определён<br>
+      x = 5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Здесь x является числом<br>
+      x = &quot;John&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Здесь x является строкой
     </div>
-    <hr>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_dynamic.html'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
 
-    <h2>Зачем изучать JavaScript?</h2>
-    <p>JavaScript - это одна из <strong>3 технологий</strong>, которые <strong>должны</strong> выучить и знать все веб-разработчики:</p>
-    <p>&nbsp;&nbsp; 1. <a href='../html/index.html' title='Уроки по HTML'><strong>HTML</strong></a> для определения содержания веб-страниц</p>
-    <p>&nbsp;&nbsp; 2. <a href='../css/index.html' title='Уроки по CSS'><strong>CSS</strong></a> для создания макета веб-страниц</p>
-    <p>&nbsp;&nbsp; 3. <a href='../js/js_intro.html' title='Уроки по JavaScript'><strong>JavaScript</strong></a> для программирования поведения веб-страниц</p>
-    <hr>
-    <p><b>Примечание.</b> Веб-страницы - это не единственное применение, где используется JavaScript. Многие настольные и серверные программы используют JavaScript. Платформа <strong>Node.js</strong> является самым известным приложением для выполнения высокопроизводительных сетевых приложений. Некоторые базы данных, такие как <strong>MongoDB</strong> и <strong>CouchDB</strong>, также используют JavaScript в качестве языка программирования.</p>
-    <hr>
-    <div class='w3-panel w3-note'>
-        <h3>Необходимо знать, что...</h3>
-        <p>JavaScript и <a href='../java/index.html'>Java</a> - это абсолютно разные языки программирования, как по концепции,
-            так и по дизайну.</p>
-        <p>Язык JavaScript был создан Бренданом Айхом в 1995 году, который стал стандартом ECMA в 1997 году.
-            <strong>ECMA-262</strong> является официальным названием стандарта. <strong>ECMAScript</strong> - это официальное название языка.</p>
-        <p>Вы можете прочитать больше о разных версиях JavaScript в разделе <a href='js_versions.html'>JS Версии</a>.</p>
+  <h2>JavaScript Строки</h2>
+  <p>Строка (или текстовая строка) представляет собой последовательность символов, например &quot;John Doe&quot;.</p>
+  <p>Строки пишутся в кавычках. Вы можете использовать одинарные или двойные кавычки:<br>
+  </p>
+
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var
+      carName1 = &quot;Volvo XC60&quot;;&nbsp;&nbsp; // Использование двойных кавычек<br>
+      var
+      carName2 = 'Volvo XC60';&nbsp;&nbsp; // Использование одинарных кавычек</div>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_string_quotes.html'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>Вы можете использовать кавычки внутри строки, если они не соответствуют кавычкам, окружающим строку:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var answer1 = &quot;Все нормально&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // Одинарная кавычка внутри двойных кавычек<br>
+      var answer2 = 'Его зовут 'Johnny'';&nbsp;&nbsp;&nbsp;
+      // Одинарные кавычки внутри двойных кавычек<br>
+      var answer3 = 'Его зовут 'Johnny'';&nbsp;&nbsp;&nbsp;
+      // Двойные кавычки внутри одинарных кавычек
     </div>
-    <hr>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_string.html'>Попробуйте сами &raquo;</a></div>
+  <p>Вы узнаете больше о строках позже в этом учебнике.</p>
+  <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Скорость обучения</h2>
-    <p>В этом учебнике скорость обучения полностью зависит от вас. Сколько времени вы захотите уделять учебе - столько и уделяйте.</p>
-    <p>Все зависит от ваших целей, желаний и возможностей.</p>
-    <p>Если вы испытываете трудности в обучении, то сделайте небольшой перерыв в учебе или перечитайте материал повторно.</p>
-    <p><strong>Всегда</strong> убеждайтесь в том, что вы полностью разобрались и понимаете <strong>все</strong> примеры, приведённые в онлайн-редакторе &quot;Попробуйте сами&quot;.</p>
-    <p>Единственный способ стать профессиональным программистом - это: Практика. Практика. И ещё практика. Код. Код. И ещё много кода!</p>
-    <hr>
+</div>  <h2>JavaScript Числа</h2>
+  <p>JavaScript имеет только один тип чисел.</p>
+  <p>Числа могут быть написаны <b>из</b> или <b>без</b> десятичных знаков:</p>
 
-    <form autocomplete='off' spellcheck='false' id='w3-exerciseform' action='https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1' method='post' target='_blank'>
-        <h2 class='shadow-black-1'>Проверьте себя с помощью упражнений</h2>
-        <div class='exercisewindow'>
-            <h2>Упражнение:</h2>
-            <p>Создайте переменную с именем <code class='w3-codespan'>carName</code> и присвойте ей значение <code class='w3-codespan'>Volvo</code>.</p>
-            <div class='exerciseprecontainer'>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x1 = 34.00;&nbsp;&nbsp;&nbsp;&nbsp; // Написано с десятичными знаками<br>
+      var x2 = 34;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Написано без десятичных знаков
+    </div>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_numbers.html'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>Очень большие или очень маленькие числа могут быть написаны с научной (экспоненциальной) нотацией:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var y = 123e5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 12300000<br>
+      var z = 123e-5;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 0.00123</div>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_numbers_large.html'>Попробуйте сами &raquo;</a></div>
+  <p>Вы узнаете больше о числах позже в этом учебнике.</p>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>JavaScript Булевы (логические) значения</h2>
+  <p>Булевых может быть только два значения: <code class='w3-codespan'>true</code> или <code class='w3-codespan'>false</code> (истина или ложь).</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var x = 5;<br>var y = 5;<br>var z = 6;<br>(x == y)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // Возвращает true<br>(x == z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает false</div>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_bolean.html'>Попробуйте сами &raquo;</a></div>
+  <p>Булевы значения часто используются в условном тестировании.</p>
+  <p>Вы узнаете больше об условном тестировании позже в этом учебнике.</p>
+  <hr>
+
+  <h2>JavaScript Массивы (arrays)</h2>
+  <p>JavaScript массивы пишутся в квадратных скобках.</p>
+  <p>Элементы массива разделяются запятыми.</p>
+  <p>Следующий код объявляет (создает) массив с именем <code class='w3-codespan'>cars</code>, содержащий три элемента (названия машин):</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];
+    </div>
+    <a target='_blank' class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_array.html'>Попробуйте сами &raquo;</a>
+  </div>
+
+  <p>Индексы массива начинаются с нуля, что означает, что первый элемент равен [0], второй [1] и т.д.</p>
+  <p>Подробнее о массивах вы узнаете далее в этом учебнике.</p>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>JavaScript Объекты</h2>
+  <p>JavaScript объекты пишутся с помощью фигурных скобок <code class='w3-codespan'>{}</code>.</p>
+  <p>Свойства объекта записываются в виде пар имя-значение, разделенных запятыми.</p>
+
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_object.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>Объект (персона) в примере выше имеет 4 свойства: firstName, lastName, age и eyeColor.</p>
+  <p>Вы узнаете больше об объектах позже в этом учебнике.</p>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Оператор typeof</h2>
+  <p>Вы можете использовать оператор JavaScript <code class='w3-codespan'>typeof</code> чтобы найти тип JavaScript переменной.</p>
+  <p>Оператор <code class='w3-codespan'>typeof</code> возвращает тип переменной или выражения:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      typeof &quot;&quot;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
+      &quot;string&quot;<br>
+      typeof &quot;John&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
+      &quot;string&quot;<br>
+      typeof &quot;John Doe&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
+      &quot;string&quot;</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_typeof_string.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      typeof 0&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
+      &quot;number&quot;<br>
+      typeof 314&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
+      &quot;number&quot;<br>
+      typeof 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
+      &quot;number&quot;<br>
+      typeof (3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
+      &quot;number&quot;<br>typeof (3 + 4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает
+      &quot;number&quot;</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_typeof_number.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Undefined / неопределённое значение</h2>
+  <p>В JavaScript переменная без значения имеет значение <code class='w3-codespan'>undefined</code>.
+    Тип также <code class='w3-codespan'>undefined</code>.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var car;&nbsp;&nbsp;&nbsp; // Значение не определено, тип не определен</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_undefined.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>Любую переменную можно очистить, установив значение в <code class='w3-codespan'>undefined</code>.
+    Тип также будет <code class='w3-codespan'>undefined</code>.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      car = undefined;&nbsp;&nbsp;&nbsp; // Значение не определено, тип не определен</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_undefined_2.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Пустые значения</h2>
+  <p>Пустое значение не имеет ничего общего с <code class='w3-codespan'>undefined</code>.</p>
+  <p>Пустая строка имеет допустимое значение и тип.</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var car = &quot;&quot;;&nbsp;&nbsp;&nbsp; // Значение является &quot;&quot;, typeof является &quot;string&quot;</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_empty.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+
+  <h2>Null / Ноль</h2>
+  <p>В JavaScript <code class='w3-codespan'>null</code> - это &quot;ничто&quot;. Предполагается, что это нечто, чего не существует.</p>
+  <p>К сожалению, в JavaScript, тип данных <code class='w3-codespan'>null</code> является объектом.</p>
+
+  <div class='w3-panel w3-note'>
+    <p>Можно считать ошибкой в JavaScript, когда <code class='w3-codespan'>typeof null</code> является объектом. Он должен быть <code class='w3-codespan'>null</code>.</p>
+  </div>
+
+  <p>Объект можно очистить, установив его в <code class='w3-codespan'>null</code>:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>person = null;&nbsp;&nbsp;&nbsp; // Теперь значение равно null, но тип по-прежнему является object<br>
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_null.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <p>Также можно очистить объект, установив его <code class='w3-codespan'>undefined</code>:</p>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>person = undefined;&nbsp;&nbsp; //	Теперь и значение, и тип не определены<br>
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_undefined_1.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Различия между Undefined и Null</h2>
+  <p><code class='w3-codespan'>undefined</code> и <code class='w3-codespan'>null</code> равноценны, но различаются по типу:</p>
+  <div class='w3-example'>
+    <div class='w3-code notranslate jsHigh'>
+      typeof undefined&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // undefined<br>typeof null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // object<br><br>null === undefined&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // false<br>null == undefined&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // true</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_undefined_3.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+
+  <h2>Примитивные данные</h2>
+  <p>Примитивное значение данных - это одно простое значение данных без дополнительных свойств и методов.</p>
+  <p>Оператор <code class='w3-codespan'>typeof</code> может вернуть один из этих примитивных типов:</p>
+  <ul>
+    <li><code class='w3-codespan'>string</code></li>
+    <li><code class='w3-codespan'>number</code></li>
+    <li><code class='w3-codespan'>boolean</code></li>
+    <li><code class='w3-codespan'>undefined</code></li>
+  </ul>
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      typeof &quot;John&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает &quot;string&quot; <br>
+      typeof 3.14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает &quot;number&quot;<br>
+      typeof true &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает  &quot;boolean&quot;<br>typeof false&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Возвращает
+      &quot;boolean&quot;<br>typeof x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // Возвращает &quot;undefined&quot; (если х не имеет значения)</div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_typeof_primitive.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <h2>Комплексные данные</h2>
+  <p>Оператор <code class='w3-codespan'>typeof</code> может вернуть один из двух сложных типов:</p>
+  <ul>
+    <li><code class='w3-codespan'>function</code></li>
+    <li><code class='w3-codespan'>object</code></li>
+  </ul>
+
+  <p>Оператор <code class='w3-codespan'>typeof</code> возвращает &quot;object&quot; для объектов, массивов и null.</p>
+  <p>Оператор <code class='w3-codespan'>typeof</code> не возвращает &quot;object&quot; для функций.</p>
+
+  <div class='w3-example'>
+    <h3>Пример</h3>
+    <div class='w3-code notranslate jsHigh'>
+      typeof {name:'John', age:34}&nbsp;// Возвращает &quot;object&quot;<br>
+      typeof [1,2,3,4]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      // Возвращает &quot;object&quot; (не &quot;массив&quot;, смотрите примечание выше)<br>
+      typeof null&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Возвращает &quot;object&quot;<br>typeof function myFunc(){}&nbsp;&nbsp; // Возвращает &quot;function&quot;<br>
+    </div>
+    <a class='w3-btn w3-margin-bottom' href='../jstryit/tryjs_datatypes_typeof_complex.html' target='_blank'>Попробуйте сами &raquo;</a>
+  </div>
+
+  <div class='w3-panel w3-note'>
+    <p>Оператор <code class='w3-codespan'>typeof</code> возвращает &quot;<code class='w3-codespan'>object</code>&quot; для массивов, потому что в JavaScript массивы являются объектами.</p>
+  </div>
+  <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>  <form autocomplete='off' spellcheck='false' id='w3-exerciseform' action='https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_datatypes1' method='post' target='_blank'>
+    <h2 class='shadow-black-1'>Проверьте себя с помощью упражнений</h2>
+    <div class='exercisewindow'>
+      <h2>Упражнение:</h2>
+      <p>Используйте комментарии, чтобы описать правильный тип данных следующих переменных:</p>
+      <div class='exerciseprecontainer'>
 <pre>
-var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' maxlength='5' style='width: 60px;'>";
+var length = 16;            // <input name='ex1' maxlength='6' style='width: 64px;'>
+var lastName = 'Johnson';   // <input name='ex2' maxlength='6' style='width: 64px;'>
+var x = {
+  firstName: 'John',
+  lastName: 'Doe'
+};                          // <input name='ex3' maxlength='6' style='width: 64px;'>
 </pre>
-            </div>
-            <br>
-            <button type='submit' class='w3-btn w3-margin-bottom'>Отправить ответ &raquo;</button>
-        </div>
-    </form>
-    <hr>
-    <h2>Распространённые вопросы</h2>
-    <ul>
-        <li><strong>Как получить JavaScript?</strong></li>
-        <li><strong>Где я могу скачать JavaScript?</strong></li>
-        <li><strong>Является ли JavaScript бесплатным?</strong></li>
-    </ul>
-    <div class='w3-panel w3-amber'>
-    <p><b>Вам не нужно где-то искать или скачивать JavaScript.</b></p>
-    <p><b>JavaScript уже запущен в вашем браузере на компьютере, планшете или смартфоне.</b></p>
-    <p><b>JavaScript можно использовать бесплатно. Он доступен для всех пользователей.</b></p>
+      </div>
+      <br>
+      <button type='submit' class='w3-btn w3-margin-bottom'>Отправить ответ &raquo;</button>
     </div>
-    <hr>
-    <div class="adver">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>JavaScript Справочники</h2>
-    <p>W3Schools содержит <strong>полный справочник по JavaScript</strong>, включая все объекты HTML и браузера.</p>
-    <p>Справочник содержит примеры всех свойств, методов и событий и постоянно обновляется в соответствии с последними веб-стандартов.</p>
-    <a class='w3-btn shadow-black-1' href='../jsref/index.html'>Полный справочник JavaScript &raquo;</a>
-    <hr>
-
-    <h2>JavaScript Проверочная Викторина</h2>
-    <p>Проверьте свои знания и навыки JavaScript на W3Schools!</p>
-    <p><a href='js_quiz.html' class='w3-button w3-blue shadow-black-1'>Начать JavaScript Викторину!</a></p>
-    <hr>
-
-    <h2>Здайте JavaScript экзамен - получите свой Диплом!</h2>
-    <div class='w3-row'>
-    <div class='w3-third w3-container w3-padding-24'><a href='../cert/index.html'><img
-                    src='../images/w3certified_logo_250.png' style='max-width:100%;' alt='Онлайн W3Schools Сертификация'/></a>
-    </div>
-    <div class='w3-twothird w3-container'><h2>Онлайн Сертификация W3Schools</h2>
-        <p>Идеальное решение для профессионалов, которым необходимо сбалансировать работу, семью и карьеру.</p>
-        <p>Больше 25 000 сертификатов уже выдано!</p>
-    </div>
-</div>
-<p><a class='w3-btn shadow-black-1' href='../cert/index.html'>Получите Ваш Сертификат! &raquo;</a></p>
-
-<div class='refcont'>
-    <a class='bigbtn' href='../cert/cert_html.html'>HTML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_css.html'>CSS Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_javascript.html'>JavaScript Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_frontend.html'>Front End Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_python.html'>Python Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_datascience.html'>Наука о данных Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_jquery.html'>jQuery Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_sql.html'>SQL Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_php.html'>PHP Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_java.html'>Java Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_bootstrap.html'>Bootstrap Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_xml.html'>XML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_cybersecurity.html'>Кибербезопасность Сертификат</a>
-    <a class='bigbtn' href='../cert/career_tips.html'>IT-карьера</a>
-    <a class='bigbtn' href='../cert/career_cv.html'>IT-резюме</a>
-</div>    <hr>
-    <p><b>Примечание.</b> Также на сайте доступен ещё один <a href='../jslearn/index.html' target='_blank'><strong>онлайн учебник по языку программирования JavaScript</strong></a> - перевод на русский язык учебника из сайта
-        <a href='https://javascript.info/' target='_blank' rel='nofollow'>javascript.info</a>.</p>
-    <hr>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
-    </div>
+  </form>
+  <hr>
+  <div class='w3-clear nextprev'>
+    <a class='w3-left w3-btn' href='js_assignment.html'>&#10094; Prev</a>
+    <a class='w3-right w3-btn' href='js_functions.html'>Next &#10095;</a>
+  </div>
 </article>
 <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
@@ -692,7 +907,6 @@ var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' m
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="6582329806" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div></div>
-
 <!--Right sidebar-->
 <div class='w3-col l2 m12' id='right'>
     <div class='sidesection w3-light-gray' style='padding-bottom: 5px'>
@@ -712,6 +926,18 @@ var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' m
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- adrightbar_media_square -->
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="5246865704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>

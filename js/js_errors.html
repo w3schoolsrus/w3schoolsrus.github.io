@@ -11,16 +11,8 @@
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
 <meta property='og:description' content='W3Schools на русском предлагает бесплатные онлайн-уроки, учебные и справочные материалы, задачи и упражнения на большинстве языках программирования и создания веб-сайтов. Охватывает наиболее популярные технологии, такие как HTML, CSS, JavaScript, PHP, Python, SQL, Java, C++, C#, Kotlin, Go, фреймворки Bootstrap, W3.CSS и многие другие'>
-<!-- adauto-websunsey--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!-- / adauto-websunsey-->
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
-<meta name='description' content='JavaScript Учебник. Бесплатные курсы онлайн по языку программирования JavaScript. Примеры кода. Тесты и задачи. Полный справочник JavaScript. Уроки для начинающих. W3Schools на русском'>
-<link rel='stylesheet' href='../styles/bigbtn.css'>
-<style>
-    #clickgame {overflow:auto;}
-    #clickgame div{color: #fff;background-color: #2196F3;line-height:120px;text-align:center;margin:5px;width:130px;float:left;cursor:pointer;}
-    #clickgame .redbtn{background-color: #dc3545;}
-    #clickgame .timediv{background-color:transparent;color: #000;font-size:20px;}
-</style>
+<title>JavaScript Ошибки. Уроки для начинающих. W3Schools на русском</title>
+<meta name='description' content='JavaScript Ошибки. Try и Catch. Операторы throw, finally. Проверка ввода. Объект Error (ошибка). Значения имени ошибки. Полный справочник. Уроки для начинающих. W3Schools на русском'>
 
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index.html'>W3schoolsRUS<span class='dotcom w3-hide-small'>. на русском</span></a>
@@ -422,7 +414,7 @@
             <a target='_top' href='js_htmldom_navigation.html'>DOM Навигация</a>
             <a target='_top' href='js_htmldom_nodes.html'>DOM Узлы</a>
             <a target='_top' href='js_htmldom_collections.html'>DOM Коллекции</a>
-            <a target='_top' href='js_htmldom_nodelist.html'>DOM Список узлов</a>
+            <a target='_top' href='js_htmldom_nodelist.html'>DOM Узловые списки</a>
             <br>
             <h2 class='left'>JS Браузер BOM</h2>
             <a target='_top' href='js_window.html'>JS Окно</a>
@@ -440,7 +432,7 @@
             <a target="_top" href="js_api_history.html">Веб-история API</a>
             <a target="_top" href="js_api_web_storage.html">Веб-хранилище API</a>
             <a target="_top" href="js_api_web_workers.html">Веб-воркер API</a>
-            <a target="_top" href="js_api_fetch.html">Web Fetch API</a>
+            <a target="_top" href="js_api_fetch.html">Веб-выборка API</a>
             <a target="_top" href="js_api_geolocation.html">Веб-геолокация API</a>
             <br>
             <h2 class='left'>JS AJAX</h2>
@@ -505,185 +497,322 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>            <a href='index.html'><img src='../svg/js.svg' alt='JavaScript. W3Schools на русском. Уроки для начинающих' class='w3-left w3-padding' title='JavaScript для начинающих. W3Schools на русском' style='width: 120px'></a>
 
-    <p class='w3-right'>
-        <a href='index_en.html' title='Перейти на английский язык'>En</a>
-        <a href="https://w3schoolsua.github.io/js/index.html" target='_blank' title='Перейти на украинский язык'>Ua</a>
-    </p>
 <article>
-    <h1>JavaScript <span class='color_h1'>Учебник</span></h1>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
+    <h1>JavaScript <span class="color_h1">Ошибки - Throw and Try to Catch (Брось и попробуй поймать)</span></h1>
+    <div class="w3-clear nextprev">
+        <a class="w3-left w3-btn" href="js_regexp.html">&#10094; Prev</a>
+        <a class="w3-right w3-btn" href="js_scope.html">Next &#10095;</a>
     </div>
-
-    <div class='w3-panel w3-info intro'>
-        <p><strong>JavaScript</strong> - это самый популярный язык программирования в мире.</p>
-        <p><strong>JavaScript</strong> - это язык программирования HTML-страниц и Web.</p>
-        <p><strong>JavaScript</strong> - это язык программирования, который легко выучить.</p>
-        <p>Этот учебник научит вас языку программирования <strong>JavaScript</strong> от базового уровня до профессионального.</p>
-        <a class='w3-btn shadow-black-1' href='js_intro.html'>Начать изучение JavaScript &raquo;</a>
-    </div>
+    <hr>
+    <p class="intro"><strong>Оператор <code class="w3-codespan">try</code></strong> позволяет проверить блок кода на наличие ошибок.</p>
+    <p class="intro"><strong>Оператор <code class="w3-codespan">catch</code></strong> позволяет вам обрабатывать ошибку.</p>
+    <p class="intro"><strong>Оператор <code class="w3-codespan">throw</code></strong> позволяет создавать собственные ошибки.</p>
+    <p class="intro"><strong>Оператор <code class="w3-codespan">finally</code></strong> позволяет выполнять код после try и catch, независимо от результата.</p>
     <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Как применяется JavaScript на веб-сайтах?</h2>
-    <div class='w3-example'>
-        <h3>Пример применения JavaScript</h3>
-        <p><span id='exampletext'>Нажмите синюю кнопку:</span></p>
-        <div class='w3-padding w3-white notranslate'>
-            <div id='clickgame'>
-                <div id='bluebtn'>Нажми меня</div>
-            </div>
-        </div>
-    </div>
-    <script async src='../scripts/ex_javascript_default.js'></script>
-
-    <h2>Примеры в каждом разделе</h2>
-    <p>С онлайн редактором <b>&quot;Попробуйте сами&quot;</b> на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a> вы можете редактировать исходящий код и просматривать результат.</p>
-    <div class='w3-example'>
+</div>    <h2>Ошибки будут!</h2>
+    <p>При выполнении кода JavaScript могут возникать разные ошибки.</p>
+    <p>Ошибки могут быть ошибками кодирования, допущенными программистом, ошибками из-за неправильного ввода и другими непредвиденными ситуациями.</p>
+    <div class="w3-example">
         <h3>Пример</h3>
-        <div class='w3-padding w3-white notranslate'>
-            <h2>Мой первый JavaScript</h2>
-            <button type='button' onclick="document.getElementById('demo').innerHTML=Date()">
-                Кликните меня, чтобы отобразить дату и время</button>
-            <p id='demo'></p>
-        </div>
-        <p>
-            <a target='_blank' class='w3-btn' href='../jstryit/tryjs_myfirst.html'>Попробуйте сами &raquo;</a>
-        </p>
+        <p>В этом примере мы неправильно написали &quot;alert&quot; как &quot;adddlert&quot;, чтобы намеренно выдать ошибку:</p>
+        <div class="w3-code notranslate htmlHigh">
+            &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br><br>&lt;script&gt;<br>
+            try {<br>&nbsp; adddlert(&quot;Welcome guest!&quot;);<br>}<br>catch(err) {<br>&nbsp;
+            document.getElementById(&quot;demo&quot;).innerHTML = err.message;<br>}<br>&lt;/script&gt;</div>
+        <a target="_blank" href="../jstryit/tryjs_try_catch.html" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+    </div>
+    <div class="w3-panel w3-note">
+        <p>JavaScript перехватывает <strong>adddlert</strong> как ошибку и выполняет код перехвата для её обработки.</p>
     </div>
     <hr>
+
+    <h2>JavaScript try и catch</h2>
+    <p>Оператор <code class="w3-codespan">try</code> позволяет определить блок кода, который будет проверяться на наличие ошибок во время его выполнения. .</p>
+    <p>Оператор <code class="w3-codespan">catch</code> позволяет определить блок кода, который будет выполняться, если в блоке try возникает ошибка.</p>
+    <p>JavaScript операторы <code class="w3-codespan">try</code> и <code class="w3-codespan">catch</code> идут в паре:</p>
+
+    <div class="w3-example">
+        <div class="w3-code notranslate">
+            try {<br>
+            &nbsp; <em>Блок кода, чтобы попробовать<br>
+            </em>}<br>
+            catch(<em>err</em>) {<br>
+            &nbsp; <em>Блок кода для обработки ошибок<br>
+            </em>}
+        </div></div>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <!-- udup_content_media_horizontally -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="6582329806" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Рекомендуется использовать меню уроков</h2>
-    <p>Если вы новичок и только начинаете изучать язык программирования JavaScript, то рекомендуется изучать этот учебник JavaScript в последовательности тем, указанных в меню.</p>
-    <p>Если у вас большой экран (например, монитор компьютера), меню всегда будет слева.</p>
-    <p>Если у вас маленький экран (например, если вы пользуетесь смартфоном или планшетом), откройте меню, кликнув иконку верхнего меню <span class='w3-xlarge'>&#9776;</span>.</p>
-    <hr>
-
-    <h2>Учитесь на примерах!</h2>
-    <p>Примеры - лучше 1000 слов. Примеры часто легче понять, чем текстовые пояснения.</p>
-    <p>Этот учебник дополняет все объяснения поясняющими примерами <b>&quot;Попробуйте сами&quot;</b>.</p>
-    <div class='w3-panel w3-note'>
-        <p>Если вы испытаете, как работают все примеры, вы узнаете много нового о JavaScript за очень короткое время!</p>
-        <a class='w3-btn'  href='js_examples.html' target='_blank'>JavaScript Примеры &raquo;</a>
-    </div>
-    <hr>
-
-    <h2>Зачем изучать JavaScript?</h2>
-    <p>JavaScript - это одна из <strong>3 технологий</strong>, которые <strong>должны</strong> выучить и знать все веб-разработчики:</p>
-    <p>&nbsp;&nbsp; 1. <a href='../html/index.html' title='Уроки по HTML'><strong>HTML</strong></a> для определения содержания веб-страниц</p>
-    <p>&nbsp;&nbsp; 2. <a href='../css/index.html' title='Уроки по CSS'><strong>CSS</strong></a> для создания макета веб-страниц</p>
-    <p>&nbsp;&nbsp; 3. <a href='../js/js_intro.html' title='Уроки по JavaScript'><strong>JavaScript</strong></a> для программирования поведения веб-страниц</p>
-    <hr>
-    <p><b>Примечание.</b> Веб-страницы - это не единственное применение, где используется JavaScript. Многие настольные и серверные программы используют JavaScript. Платформа <strong>Node.js</strong> является самым известным приложением для выполнения высокопроизводительных сетевых приложений. Некоторые базы данных, такие как <strong>MongoDB</strong> и <strong>CouchDB</strong>, также используют JavaScript в качестве языка программирования.</p>
-    <hr>
-    <div class='w3-panel w3-note'>
-        <h3>Необходимо знать, что...</h3>
-        <p>JavaScript и <a href='../java/index.html'>Java</a> - это абсолютно разные языки программирования, как по концепции,
-            так и по дизайну.</p>
-        <p>Язык JavaScript был создан Бренданом Айхом в 1995 году, который стал стандартом ECMA в 1997 году.
-            <strong>ECMA-262</strong> является официальным названием стандарта. <strong>ECMAScript</strong> - это официальное название языка.</p>
-        <p>Вы можете прочитать больше о разных версиях JavaScript в разделе <a href='js_versions.html'>JS Версии</a>.</p>
-    </div>
-    <hr>
-    <div class="adver">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Скорость обучения</h2>
-    <p>В этом учебнике скорость обучения полностью зависит от вас. Сколько времени вы захотите уделять учебе - столько и уделяйте.</p>
-    <p>Все зависит от ваших целей, желаний и возможностей.</p>
-    <p>Если вы испытываете трудности в обучении, то сделайте небольшой перерыв в учебе или перечитайте материал повторно.</p>
-    <p><strong>Всегда</strong> убеждайтесь в том, что вы полностью разобрались и понимаете <strong>все</strong> примеры, приведённые в онлайн-редакторе &quot;Попробуйте сами&quot;.</p>
-    <p>Единственный способ стать профессиональным программистом - это: Практика. Практика. И ещё практика. Код. Код. И ещё много кода!</p>
-    <hr>
-
-    <form autocomplete='off' spellcheck='false' id='w3-exerciseform' action='https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1' method='post' target='_blank'>
-        <h2 class='shadow-black-1'>Проверьте себя с помощью упражнений</h2>
-        <div class='exercisewindow'>
-            <h2>Упражнение:</h2>
-            <p>Создайте переменную с именем <code class='w3-codespan'>carName</code> и присвойте ей значение <code class='w3-codespan'>Volvo</code>.</p>
-            <div class='exerciseprecontainer'>
-<pre>
-var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' maxlength='5' style='width: 60px;'>";
-</pre>
-            </div>
-            <br>
-            <button type='submit' class='w3-btn w3-margin-bottom'>Отправить ответ &raquo;</button>
-        </div>
-    </form>
-    <hr>
-    <h2>Распространённые вопросы</h2>
-    <ul>
-        <li><strong>Как получить JavaScript?</strong></li>
-        <li><strong>Где я могу скачать JavaScript?</strong></li>
-        <li><strong>Является ли JavaScript бесплатным?</strong></li>
-    </ul>
-    <div class='w3-panel w3-amber'>
-    <p><b>Вам не нужно где-то искать или скачивать JavaScript.</b></p>
-    <p><b>JavaScript уже запущен в вашем браузере на компьютере, планшете или смартфоне.</b></p>
-    <p><b>JavaScript можно использовать бесплатно. Он доступен для всех пользователей.</b></p>
-    </div>
-    <hr>
-    <div class="adver">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>JavaScript Справочники</h2>
-    <p>W3Schools содержит <strong>полный справочник по JavaScript</strong>, включая все объекты HTML и браузера.</p>
-    <p>Справочник содержит примеры всех свойств, методов и событий и постоянно обновляется в соответствии с последними веб-стандартов.</p>
-    <a class='w3-btn shadow-black-1' href='../jsref/index.html'>Полный справочник JavaScript &raquo;</a>
-    <hr>
-
-    <h2>JavaScript Проверочная Викторина</h2>
-    <p>Проверьте свои знания и навыки JavaScript на W3Schools!</p>
-    <p><a href='js_quiz.html' class='w3-button w3-blue shadow-black-1'>Начать JavaScript Викторину!</a></p>
-    <hr>
-
-    <h2>Здайте JavaScript экзамен - получите свой Диплом!</h2>
-    <div class='w3-row'>
-    <div class='w3-third w3-container w3-padding-24'><a href='../cert/index.html'><img
-                    src='../images/w3certified_logo_250.png' style='max-width:100%;' alt='Онлайн W3Schools Сертификация'/></a>
-    </div>
-    <div class='w3-twothird w3-container'><h2>Онлайн Сертификация W3Schools</h2>
-        <p>Идеальное решение для профессионалов, которым необходимо сбалансировать работу, семью и карьеру.</p>
-        <p>Больше 25 000 сертификатов уже выдано!</p>
-    </div>
 </div>
-<p><a class='w3-btn shadow-black-1' href='../cert/index.html'>Получите Ваш Сертификат! &raquo;</a></p>
-
-<div class='refcont'>
-    <a class='bigbtn' href='../cert/cert_html.html'>HTML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_css.html'>CSS Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_javascript.html'>JavaScript Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_frontend.html'>Front End Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_python.html'>Python Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_datascience.html'>Наука о данных Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_jquery.html'>jQuery Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_sql.html'>SQL Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_php.html'>PHP Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_java.html'>Java Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_bootstrap.html'>Bootstrap Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_xml.html'>XML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_cybersecurity.html'>Кибербезопасность Сертификат</a>
-    <a class='bigbtn' href='../cert/career_tips.html'>IT-карьера</a>
-    <a class='bigbtn' href='../cert/career_cv.html'>IT-резюме</a>
-</div>    <hr>
-    <p><b>Примечание.</b> Также на сайте доступен ещё один <a href='../jslearn/index.html' target='_blank'><strong>онлайн учебник по языку программирования JavaScript</strong></a> - перевод на русский язык учебника из сайта
-        <a href='https://javascript.info/' target='_blank' rel='nofollow'>javascript.info</a>.</p>
+    <h2>JavaScript Выдает ошибки</h2>
+    <p>При возникновении ошибки JavaScript обычно останавливается и генерирует сообщение об ошибке.</p>
+    <p>Технический термин для этого: JavaScript <strong>вызовет исключение (выдаст ошибку)</strong>.</p>
+    <div class="w3-panel w3-note">
+        <p>JavaScript фактически создаст <strong>объект ошибки</strong> с двумя свойствами:
+            <strong>имя</strong> и <strong>сообщение</strong>.</p>
+    </div>
     <hr>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
+
+    <h2>Оператор throw</h2>
+    <p>Оператор <code class="w3-codespan">throw</code> позволяет вам создать настраиваемую ошибку.</p>
+    <p>Технически вы можете <strong>вызвать исключение (выдать ошибку)</strong>.</p>
+
+    <p>Исключением может быть JavaScript <code class="w3-codespan">String</code>, <code class="w3-codespan">Number</code>, <code class="w3-codespan">Boolean</code> или <code class="w3-codespan">Object</code>:</p>
+
+    <div class="w3-example">
+        <div class="w3-code notranslate jsHigh">
+            throw &quot;Too big&quot;;&nbsp;&nbsp;&nbsp; // бросить текст<br>
+            throw 500;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // бросить число</div>
+    </div>
+    <p>Если вы используете <code class="w3-codespan">throw</code> вместе с <code class="w3-codespan">try</code> и <code class="w3-codespan">catch</code>, вы можете контролировать выполнение программы и создавать собственные сообщения об ошибках.</p>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Пример проверки ввода</h2>
+    <p>В этом примере исследуется ввод. Если значение неверно, генерируется исключение (ошибка).</p>
+    <p>Исключение (err) перехватывается оператором catch, и отображается настраиваемое сообщение об ошибке:</p>
+
+    <div class="w3-example">
+        <div class="w3-code notranslate htmlHigh">
+            &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;Please input a number between 5 and 10:&lt;/p&gt;<br><br>&lt;input id=&quot;demo&quot; type=&quot;text&quot;&gt;<br>&lt;button type=&quot;button&quot;
+            onclick=&quot;myFunction()&quot;&gt;Test Input&lt;/button&gt;<br>&lt;p id=&quot;p01&quot;&gt;&lt;/p&gt;<br><br>
+            &lt;script&gt;<br>function myFunction() {<br>&nbsp;&nbsp;const message =
+            document.getElementById(&quot;p01&quot;);<br>&nbsp;&nbsp;message.innerHTML = &quot;&quot;;<br>
+            &nbsp;&nbsp;let x =
+            document.getElementById(&quot;demo&quot;).value;<br>&nbsp;
+            try { <br>&nbsp;&nbsp;&nbsp;&nbsp;if(x == &quot;&quot;) throw &quot;empty&quot;;<br>
+            &nbsp;&nbsp;&nbsp;
+            if(isNaN(x)) throw &quot;not a number&quot;;<br>&nbsp;&nbsp;&nbsp;
+            x = Number(x);<br>&nbsp;&nbsp;&nbsp; if(x &lt; 5) throw
+            &quot;too low&quot;;<br>&nbsp;&nbsp;&nbsp; if(x &gt; 10) throw &quot;too
+            high&quot;;<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;catch(err) {<br>&nbsp;&nbsp;&nbsp; message.innerHTML =
+            &quot;Input is &quot; + err;<br>&nbsp;&nbsp;}<br>}<br>&lt;/script&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+        </div>
+        <a target="_blank" href="../jstryit/tryjs_throw_error.html" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>HTML Проверка</h2>
+    <p>The code above is just an example.</p>
+    <p>Современные браузеры часто используют комбинацию JavaScript и встроенной проверки HTML, используя предопределенные правила проверки, определенные в атрибутах HTML:</p>
+    <div class="w3-example">
+        <div class="w3-code notranslate htmlHigh">
+            &lt;input id=&quot;demo&quot; type=&quot;number&quot; min=&quot;5&quot; max=&quot;10&quot; step=&quot;1&quot;&gt;</div>
+    </div>
+
+    <p>Вы можете узнать больше о проверке форм позже в данном учебнике на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a>.</p>
+
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- udup_content_media_horizontally -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="6582329806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+    <h2>Оператор finally</h2>
+    <p>Оператор <code class="w3-codespan">finally</code> позволяет выполнять код после try и catch, независимо от результата:</p>
+
+    <div class="w3-example">
+        <h3>Синтаксис</h3>
+        <div class="w3-code notranslate jsHigh">
+            try {<br>
+            &nbsp; <em>Блок кода, чтобы попробовать<br>
+            </em>}<br>
+            catch(<em>err</em>) {<br>
+            &nbsp; <em>Блок кода для обработки ошибок<br>
+            </em>}
+            <br>finally {<br>&nbsp; <em>Блок кода, который будет выполняться независимо от результата try / catch<br>
+            </em>}</div></div>
+
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            function myFunction() {<br>&nbsp; const message =
+            document.getElementById(&quot;p01&quot;);<br>&nbsp; message.innerHTML = &quot;&quot;;<br>
+            &nbsp;&nbsp;let x =
+            document.getElementById(&quot;demo&quot;).value;<br>&nbsp;
+            try { <br>&nbsp;&nbsp;&nbsp;
+            if(x == &quot;&quot;) throw &quot;is empty&quot;;<br>&nbsp;&nbsp;&nbsp; if(isNaN(x))
+            throw &quot;is not a number&quot;;<br>&nbsp;&nbsp;&nbsp;
+            x = Number(x);<br>&nbsp;&nbsp;&nbsp; if(x &gt;
+            10) throw &quot;is too high&quot;;<br>&nbsp;&nbsp;&nbsp; if(x &lt;
+            5) throw &quot;is too low&quot;;<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;catch(err)
+            {<br>&nbsp;&nbsp;&nbsp; message.innerHTML = &quot;Error: &quot; +
+            err + &quot;.&quot;;<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;finally {<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(&quot;demo&quot;).value = &quot;&quot;;<br>
+            &nbsp;&nbsp;}<br>}</div>
+        <a target="_blank" href="../jstryit/tryjs_finally_error.html" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Объект Error (ошибка)</h2>
+    <p>JavaScript имеет встроенный объект error, который предоставляет информацию об ошибке при ее возникновении.</p>
+    <p>Объект error предоставляет два полезных свойства: имя и сообщение.</p>
+    <hr>
+
+    <h2>Свойства объекта Error</h2>
+    <table class="ws-table-all">
+        <tr><th>Свойство</th><th>Описание</th></tr>
+        <tr><td>name</td><td>Устанавливает или возвращает имя ошибки</td></tr>
+        <tr><td>message</td><td>Устанавливает или возвращает сообщение об ошибке (строку)</td></tr>
+    </table>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Значения имени ошибки</h2>
+    <p>Свойство имени ошибки может вернуть шесть различных значений:</p>
+    <table class="ws-table-all">
+        <tr><th>Имя ошибки</th><th>Описание</th></tr>
+        <tr><td>EvalError</td><td>Произошла ошибка в функции eval()</td></tr>
+        <tr><td>RangeError</td><td>Произошло число &quot;Вне допустимого диапазона&quot;</td></tr>
+        <tr><td>ReferenceError</td><td>Произошла недопустимая ссылка</td></tr>
+        <tr><td>SyntaxError</td><td>Произошла синтаксическая ошибка</td></tr>
+        <tr><td>TypeError</td><td>Произошла ошибка типа</td></tr>
+        <tr><td>URIError</td><td>Произошла ошибка в encodeURI()</td></tr>
+    </table>
+    <p>Шесть различных значений описаны ниже.</p>
+    <hr>
+
+    <h2>Ошибка Eval Error</h2>
+    <p>Ошибка <code class="w3-codespan">EvalError</code> указывает на ошибку в функции eval().</p>
+    <div class="w3-panel w3-warning"><p>Новые версии JavaScript не генерируют EvalError. Вместо этого используйте SyntaxError.</p></div>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- udup_content_media_horizontally -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="6582329806" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+    <h2>Ошибка Range Error</h2>
+    <p>Ошибка <code class="w3-codespan">RangeError</code> выдается, если вы используете число, выходящее за пределы диапазона допустимых значений.</p>
+    <p>Например: вы не можете установить количество значащих цифр числа равным 500.</p>
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            let num = 1;<br>
+            try {<br>
+            &nbsp; num.toPrecision(500);&nbsp;&nbsp; // Число не может содержать 500 значащих цифр<br>
+            }<br>
+            catch(err) {<br>
+            &nbsp; document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+            }
+        </div>
+        <a target="_blank" href="../jstryit/tryjs_error_rangeerror.html" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Ошибка Reference Error</h2>
+    <p><code class="w3-codespan">ReferenceError</code> выдаётся, если вы используете (ссылаетесь) на переменную, которая не была объявлена:</p>
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            let x = 5;<br>try {<br>
+            &nbsp;&nbsp;x = y + 1;&nbsp;&nbsp; // y не может использоваться (ссылаться)<br>
+            }<br>
+            catch(err) {<br>
+            &nbsp; document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+            }
+        </div>
+        <a class="w3-btn w3-margin-bottom" href="../jstryit/tryjs_error_referenceerror.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+
+    <h2>Ошибка Syntax Error</h2>
+    <p><code class="w3-codespan">SyntaxError</code> выдаётся, если вы пытаетесь запустить код с синтаксической ошибкой.</p>
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            try {<br>&nbsp; eval(&quot;alert('Hello)&quot;);&nbsp;&nbsp; // Отсутствие ' приведет к ошибке<br>
+            }<br>catch(err) {<br>&nbsp;&nbsp;document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>} </div>
+        <a class="w3-btn w3-margin-bottom" href="../jstryit/tryjs_error_syntaxerror.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Ошибка Type Error</h2>
+    <p><code class="w3-codespan">TypeError</code> выдаётся, если вы используете значение, выходящее за пределы диапазона ожидаемых типов:</p>
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            let num = 1;<br>
+            try {<br>
+            &nbsp;&nbsp;num.toUpperCase();&nbsp;&nbsp; // Вы не можете преобразовать число в верхний регистр<br>
+            }<br>
+            catch(err) {<br>
+            &nbsp;&nbsp;document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+            }
+        </div>
+        <a class="w3-btn w3-margin-bottom" href="../jstryit/tryjs_error_typeerror.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Ошибка URI (Uniform Resource Identifier - Единый идентификатор ресурса) Error</h2>
+    <p><code class="w3-codespan">URIError</code> выдаётся, если вы используете недопустимые символы в функции URI:</p>
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            try {<br>
+            &nbsp; decodeURI(&quot;%%%&quot;);&nbsp;&nbsp; // Вы не можете декодировать URI знаки процента<br>
+            }<br>
+            catch(err) {<br>
+            &nbsp;&nbsp;document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+            }
+        </div>
+        <a class="w3-btn w3-margin-bottom" href="../jstryit/tryjs_error_urierror.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Нестандартные Свойства объекта Error</h2>
+    <div class="w3-panel w3-warning">
+        <p>Mozilla и Microsoft определяют некоторые нестандартные свойства объекта ошибки:</p>
+        <p>fileName (Mozilla)<br>
+            lineNumber (Mozilla)<br>
+            columnNumber (Mozilla)<br>
+            stack (Mozilla)<br>
+            description (Microsoft)<br>
+            number (Microsoft)</p>
+        <p>Не используйте эти свойства на общедоступных веб-сайтах. Они не будут работать во всех браузерах.</p>
+    </div>
+    <hr>
+    <h2>Полный справочник Error</h2>
+    <p>Полный справочник по объекту Error смотрите в главе <a href="../jsref/jsref_obj_error.html">Полный справочник JavaScript Error</a> на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a>.</p>
+    <hr>
+    <div class="w3-clear nextprev">
+        <a class="w3-left w3-btn" href="js_regexp.html">&#10094; Prev</a>
+        <a class="w3-right w3-btn" href="js_scope.html">Next &#10095;</a>
     </div>
 </article>
 <div class="adver">
@@ -712,6 +841,18 @@ var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' m
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- adrightbar_media_square -->
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="5246865704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>

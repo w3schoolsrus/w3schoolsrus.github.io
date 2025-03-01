@@ -11,16 +11,8 @@
 <meta property='og:image:width' content='436'>
 <meta property='og:image:height' content='228'>
 <meta property='og:description' content='W3Schools на русском предлагает бесплатные онлайн-уроки, учебные и справочные материалы, задачи и упражнения на большинстве языках программирования и создания веб-сайтов. Охватывает наиболее популярные технологии, такие как HTML, CSS, JavaScript, PHP, Python, SQL, Java, C++, C#, Kotlin, Go, фреймворки Bootstrap, W3.CSS и многие другие'>
-<!-- adauto-websunsey--><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6358227327561384" crossorigin="anonymous"></script><!-- / adauto-websunsey-->
-<title>JavaScript Учебник. Уроки для начинающих. W3Schools на русском</title>
-<meta name='description' content='JavaScript Учебник. Бесплатные курсы онлайн по языку программирования JavaScript. Примеры кода. Тесты и задачи. Полный справочник JavaScript. Уроки для начинающих. W3Schools на русском'>
-<link rel='stylesheet' href='../styles/bigbtn.css'>
-<style>
-    #clickgame {overflow:auto;}
-    #clickgame div{color: #fff;background-color: #2196F3;line-height:120px;text-align:center;margin:5px;width:130px;float:left;cursor:pointer;}
-    #clickgame .redbtn{background-color: #dc3545;}
-    #clickgame .timediv{background-color:transparent;color: #000;font-size:20px;}
-</style>
+<title>JavaScript Дебагинг (отладка). Уроки для начинающих. W3Schools на русском</title>
+<meta name='description' content='JavaScript Отладка (дебагинг) кода. Метод console.log(). Установка точек останова. Ключевое слово debugger. Основные инструменты отладки браузеров. Как запустить консоль в браузере? Уроки для начинающих. W3Schools на русском'>
 
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index.html'>W3schoolsRUS<span class='dotcom w3-hide-small'>. на русском</span></a>
@@ -422,7 +414,7 @@
             <a target='_top' href='js_htmldom_navigation.html'>DOM Навигация</a>
             <a target='_top' href='js_htmldom_nodes.html'>DOM Узлы</a>
             <a target='_top' href='js_htmldom_collections.html'>DOM Коллекции</a>
-            <a target='_top' href='js_htmldom_nodelist.html'>DOM Список узлов</a>
+            <a target='_top' href='js_htmldom_nodelist.html'>DOM Узловые списки</a>
             <br>
             <h2 class='left'>JS Браузер BOM</h2>
             <a target='_top' href='js_window.html'>JS Окно</a>
@@ -440,7 +432,7 @@
             <a target="_top" href="js_api_history.html">Веб-история API</a>
             <a target="_top" href="js_api_web_storage.html">Веб-хранилище API</a>
             <a target="_top" href="js_api_web_workers.html">Веб-воркер API</a>
-            <a target="_top" href="js_api_fetch.html">Web Fetch API</a>
+            <a target="_top" href="js_api_fetch.html">Веб-выборка API</a>
             <a target="_top" href="js_api_geolocation.html">Веб-геолокация API</a>
             <br>
             <h2 class='left'>JS AJAX</h2>
@@ -505,185 +497,129 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>            <a href='index.html'><img src='../svg/js.svg' alt='JavaScript. W3Schools на русском. Уроки для начинающих' class='w3-left w3-padding' title='JavaScript для начинающих. W3Schools на русском' style='width: 120px'></a>
 
-    <p class='w3-right'>
-        <a href='index_en.html' title='Перейти на английский язык'>En</a>
-        <a href="https://w3schoolsua.github.io/js/index.html" target='_blank' title='Перейти на украинский язык'>Ua</a>
-    </p>
 <article>
-    <h1>JavaScript <span class='color_h1'>Учебник</span></h1>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
+    <h1>JavaScript <span class="color_h1">Отладка (дебагинг)</span></h1>
+    <div class="w3-clear nextprev">
+        <a class="w3-left w3-btn" href="js_json.html">&#10094; Prev</a>
+        <a class="w3-right w3-btn" href="js_conventions.html">Next &#10095;</a>
     </div>
+    <hr>
 
-    <div class='w3-panel w3-info intro'>
-        <p><strong>JavaScript</strong> - это самый популярный язык программирования в мире.</p>
-        <p><strong>JavaScript</strong> - это язык программирования HTML-страниц и Web.</p>
-        <p><strong>JavaScript</strong> - это язык программирования, который легко выучить.</p>
-        <p>Этот учебник научит вас языку программирования <strong>JavaScript</strong> от базового уровня до профессионального.</p>
-        <a class='w3-btn shadow-black-1' href='js_intro.html'>Начать изучение JavaScript &raquo;</a>
-    </div>
+    <div class="w3-note w3-panel"><p><strong>Ошибки (баги)</strong> могут (будут) возникать каждый раз, когда вы пишете новый компьютерный код.</p></div>
     <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- AdInFeed -->
     <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Как применяется JavaScript на веб-сайтах?</h2>
-    <div class='w3-example'>
-        <h3>Пример применения JavaScript</h3>
-        <p><span id='exampletext'>Нажмите синюю кнопку:</span></p>
-        <div class='w3-padding w3-white notranslate'>
-            <div id='clickgame'>
-                <div id='bluebtn'>Нажми меня</div>
-            </div>
-        </div>
-    </div>
-    <script async src='../scripts/ex_javascript_default.js'></script>
+</div>    <h2>Отладка (дебагинг) кода</h2>
+    <p>Программный код может содержать синтаксические или логические ошибки.</p>
+    <p>Многие из этих ошибок сложно диагностировать.</p>
+    <p>Часто, когда программный код содержит ошибки, ничего не происходит. Сообщения об ошибках отсутствуют, и вы не получите указаний, где искать ошибки.</p>
+    <p>Поиск (и исправление) ошибок в программном коде называется <strong>отладкой (или дебагингом) кода</strong>.</p>
+    <hr>
+    <h2>Отладчики JavaScript</h2>
+    <p>Отладка - непростая задача. Но, к счастью, все современные браузеры имеют встроенный отладчик JavaScript.</p>
+    <p>Встроенные отладчики можно включать и выключать, заставляя пользователя сообщать об ошибках.</p>
+    <p>С помощью отладчика вы также можете устанавливать точки останова (места, где выполнение кода может быть остановлено) и проверять переменные во время выполнения кода.</p>
+    <p>Обычно так. В противном случае следуя инструкциям внизу страницы, вы активируете отладку в своем браузере с помощью клавиши F12 и выбираете &quot;Консоль&quot; в меню отладчика.</p>
+    <hr>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Метод console.log()</h2>
+    <p>Если ваш браузер поддерживает отладку, вы можете использовать <code class="w3-codespan">console.log()</code> для отображения значений JavaScript в окне отладчика:</p>
 
-    <h2>Примеры в каждом разделе</h2>
-    <p>С онлайн редактором <b>&quot;Попробуйте сами&quot;</b> на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a> вы можете редактировать исходящий код и просматривать результат.</p>
-    <div class='w3-example'>
+    <div class="w3-example">
         <h3>Пример</h3>
-        <div class='w3-padding w3-white notranslate'>
-            <h2>Мой первый JavaScript</h2>
-            <button type='button' onclick="document.getElementById('demo').innerHTML=Date()">
-                Кликните меня, чтобы отобразить дату и время</button>
-            <p id='demo'></p>
-        </div>
-        <p>
-            <a target='_blank' class='w3-btn' href='../jstryit/tryjs_myfirst.html'>Попробуйте сами &raquo;</a>
-        </p>
+        <div class="w3-code notranslate htmlHigh">
+            &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;Моя первая веб-страница&lt;/h1&gt;<br><br>
+            &lt;script&gt;<br>a = 5;<br>b = 6;<br>c = a + b;<br>console.log(c);<br>&lt;/script&gt;<br>
+            <br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+        <a class="w3-btn w3-margin-bottom" href="../jstryit/tryjs_console.html" target="_blank">Попробуйте сами &raquo;</a>
     </div>
+
+    <div class="w3-note w3-panel">
+        <p><b>Совет:</b> Дополнительные сведения о методе <code class="w3-codespan">console.log()</code> смотрите в <a href="../jsref/met_console_log.html">Справочнике по JavaScript консоле</a> на нашем сайте <a href='../index.html'><strong>W3Schools на русском</strong></a>.</p>
+    </div>
+    <hr>
+
+    <h2>Установка точек останова</h2>
+    <p>В окне отладчика вы можете установить точки останова в JavaScript коде.</p>
+    <p>В каждой точке останова JavaScript прекращает выполнение и позволяет вам проверять значения JavaScript.</p>
+    <p>После изучения значений вы можете возобновить выполнение кода (обычно с помощью кнопки воспроизведения).</p>
     <hr>
     <div class="adver">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <!-- udup_content_media_horizontally -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="6582329806" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Рекомендуется использовать меню уроков</h2>
-    <p>Если вы новичок и только начинаете изучать язык программирования JavaScript, то рекомендуется изучать этот учебник JavaScript в последовательности тем, указанных в меню.</p>
-    <p>Если у вас большой экран (например, монитор компьютера), меню всегда будет слева.</p>
-    <p>Если у вас маленький экран (например, если вы пользуетесь смартфоном или планшетом), откройте меню, кликнув иконку верхнего меню <span class='w3-xlarge'>&#9776;</span>.</p>
-    <hr>
-
-    <h2>Учитесь на примерах!</h2>
-    <p>Примеры - лучше 1000 слов. Примеры часто легче понять, чем текстовые пояснения.</p>
-    <p>Этот учебник дополняет все объяснения поясняющими примерами <b>&quot;Попробуйте сами&quot;</b>.</p>
-    <div class='w3-panel w3-note'>
-        <p>Если вы испытаете, как работают все примеры, вы узнаете много нового о JavaScript за очень короткое время!</p>
-        <a class='w3-btn'  href='js_examples.html' target='_blank'>JavaScript Примеры &raquo;</a>
-    </div>
-    <hr>
-
-    <h2>Зачем изучать JavaScript?</h2>
-    <p>JavaScript - это одна из <strong>3 технологий</strong>, которые <strong>должны</strong> выучить и знать все веб-разработчики:</p>
-    <p>&nbsp;&nbsp; 1. <a href='../html/index.html' title='Уроки по HTML'><strong>HTML</strong></a> для определения содержания веб-страниц</p>
-    <p>&nbsp;&nbsp; 2. <a href='../css/index.html' title='Уроки по CSS'><strong>CSS</strong></a> для создания макета веб-страниц</p>
-    <p>&nbsp;&nbsp; 3. <a href='../js/js_intro.html' title='Уроки по JavaScript'><strong>JavaScript</strong></a> для программирования поведения веб-страниц</p>
-    <hr>
-    <p><b>Примечание.</b> Веб-страницы - это не единственное применение, где используется JavaScript. Многие настольные и серверные программы используют JavaScript. Платформа <strong>Node.js</strong> является самым известным приложением для выполнения высокопроизводительных сетевых приложений. Некоторые базы данных, такие как <strong>MongoDB</strong> и <strong>CouchDB</strong>, также используют JavaScript в качестве языка программирования.</p>
-    <hr>
-    <div class='w3-panel w3-note'>
-        <h3>Необходимо знать, что...</h3>
-        <p>JavaScript и <a href='../java/index.html'>Java</a> - это абсолютно разные языки программирования, как по концепции,
-            так и по дизайну.</p>
-        <p>Язык JavaScript был создан Бренданом Айхом в 1995 году, который стал стандартом ECMA в 1997 году.
-            <strong>ECMA-262</strong> является официальным названием стандарта. <strong>ECMAScript</strong> - это официальное название языка.</p>
-        <p>Вы можете прочитать больше о разных версиях JavaScript в разделе <a href='js_versions.html'>JS Версии</a>.</p>
-    </div>
-    <hr>
-    <div class="adver">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>Скорость обучения</h2>
-    <p>В этом учебнике скорость обучения полностью зависит от вас. Сколько времени вы захотите уделять учебе - столько и уделяйте.</p>
-    <p>Все зависит от ваших целей, желаний и возможностей.</p>
-    <p>Если вы испытываете трудности в обучении, то сделайте небольшой перерыв в учебе или перечитайте материал повторно.</p>
-    <p><strong>Всегда</strong> убеждайтесь в том, что вы полностью разобрались и понимаете <strong>все</strong> примеры, приведённые в онлайн-редакторе &quot;Попробуйте сами&quot;.</p>
-    <p>Единственный способ стать профессиональным программистом - это: Практика. Практика. И ещё практика. Код. Код. И ещё много кода!</p>
-    <hr>
-
-    <form autocomplete='off' spellcheck='false' id='w3-exerciseform' action='https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1' method='post' target='_blank'>
-        <h2 class='shadow-black-1'>Проверьте себя с помощью упражнений</h2>
-        <div class='exercisewindow'>
-            <h2>Упражнение:</h2>
-            <p>Создайте переменную с именем <code class='w3-codespan'>carName</code> и присвойте ей значение <code class='w3-codespan'>Volvo</code>.</p>
-            <div class='exerciseprecontainer'>
-<pre>
-var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' maxlength='5' style='width: 60px;'>";
-</pre>
-            </div>
-            <br>
-            <button type='submit' class='w3-btn w3-margin-bottom'>Отправить ответ &raquo;</button>
-        </div>
-    </form>
-    <hr>
-    <h2>Распространённые вопросы</h2>
-    <ul>
-        <li><strong>Как получить JavaScript?</strong></li>
-        <li><strong>Где я могу скачать JavaScript?</strong></li>
-        <li><strong>Является ли JavaScript бесплатным?</strong></li>
-    </ul>
-    <div class='w3-panel w3-amber'>
-    <p><b>Вам не нужно где-то искать или скачивать JavaScript.</b></p>
-    <p><b>JavaScript уже запущен в вашем браузере на компьютере, планшете или смартфоне.</b></p>
-    <p><b>JavaScript можно использовать бесплатно. Он доступен для всех пользователей.</b></p>
-    </div>
-    <hr>
-    <div class="adver">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
-    <!-- AdInFeed -->
-    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>    <h2>JavaScript Справочники</h2>
-    <p>W3Schools содержит <strong>полный справочник по JavaScript</strong>, включая все объекты HTML и браузера.</p>
-    <p>Справочник содержит примеры всех свойств, методов и событий и постоянно обновляется в соответствии с последними веб-стандартов.</p>
-    <a class='w3-btn shadow-black-1' href='../jsref/index.html'>Полный справочник JavaScript &raquo;</a>
-    <hr>
-
-    <h2>JavaScript Проверочная Викторина</h2>
-    <p>Проверьте свои знания и навыки JavaScript на W3Schools!</p>
-    <p><a href='js_quiz.html' class='w3-button w3-blue shadow-black-1'>Начать JavaScript Викторину!</a></p>
-    <hr>
-
-    <h2>Здайте JavaScript экзамен - получите свой Диплом!</h2>
-    <div class='w3-row'>
-    <div class='w3-third w3-container w3-padding-24'><a href='../cert/index.html'><img
-                    src='../images/w3certified_logo_250.png' style='max-width:100%;' alt='Онлайн W3Schools Сертификация'/></a>
-    </div>
-    <div class='w3-twothird w3-container'><h2>Онлайн Сертификация W3Schools</h2>
-        <p>Идеальное решение для профессионалов, которым необходимо сбалансировать работу, семью и карьеру.</p>
-        <p>Больше 25 000 сертификатов уже выдано!</p>
-    </div>
 </div>
-<p><a class='w3-btn shadow-black-1' href='../cert/index.html'>Получите Ваш Сертификат! &raquo;</a></p>
+    <h2>Ключевое слово debugger</h2>
+    <p>Ключевое слово <code class="w3-codespan">debugger</code> останавливает выполнение JavaScript и вызывает (если доступно) функцию отладки.</p>
+    <p>Это та же функция, что и установка точки останова в отладчике.</p>
+    <p>Если отладка недоступна, инструкция отладчика не действует.</p>
+    <p>При включенном отладчике этот код перестанет выполняться до того, как выполнит третью строку.</p>
 
-<div class='refcont'>
-    <a class='bigbtn' href='../cert/cert_html.html'>HTML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_css.html'>CSS Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_javascript.html'>JavaScript Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_frontend.html'>Front End Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_python.html'>Python Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_datascience.html'>Наука о данных Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_jquery.html'>jQuery Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_sql.html'>SQL Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_php.html'>PHP Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_java.html'>Java Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_bootstrap.html'>Bootstrap Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_xml.html'>XML Сертификат</a>
-    <a class='bigbtn' href='../cert/cert_cybersecurity.html'>Кибербезопасность Сертификат</a>
-    <a class='bigbtn' href='../cert/career_tips.html'>IT-карьера</a>
-    <a class='bigbtn' href='../cert/career_cv.html'>IT-резюме</a>
-</div>    <hr>
-    <p><b>Примечание.</b> Также на сайте доступен ещё один <a href='../jslearn/index.html' target='_blank'><strong>онлайн учебник по языку программирования JavaScript</strong></a> - перевод на русский язык учебника из сайта
-        <a href='https://javascript.info/' target='_blank' rel='nofollow'>javascript.info</a>.</p>
+    <div class="w3-example">
+        <h3>Пример</h3>
+        <div class="w3-code notranslate jsHigh">
+            let x = 15 * 5;<br>debugger;<br>document.getElementById(&quot;demo&quot;).innerHTML = x;
+        </div>
+        <a class="w3-btn w3-margin-bottom" href="../jstryit/tryjs_debugger.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
     <hr>
-    <div class='w3-clear nextprev'>
-        <a class='w3-left w3-btn' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-btn' href='js_intro.html'>Next &#10095;</a>
+    <div class="adver">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- AdInFeed -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-7d+da+12+1c+2v" data-ad-client="ca-pub-4060216941760396" data-ad-slot="8552527497"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>    <h2>Основные инструменты отладки браузеров</h2>
+    <p>Обычно вы активируете отладку в своём браузере с помощью F12 и выбираете &quot;Console&quot; в меню отладчика.</p>
+    <p>В противном случае выполните следующие действия:</p>
+    <h2>Chrome</h2>
+    <ul>
+        <li>Открыть браузер.</li>
+        <li>В меню выберите &quot;Дополнительные инструменты&quot;.</li>
+        <li>В инструментах выберите &quot;Инструменты разработчика&quot;.</li>
+        <li>Затем выберите Консоль.</li>
+    </ul>
+    <h2>Firefox</h2>
+    <ul>
+        <li>Открыть браузер.</li>
+        <li>В меню выберите &quot;Инструменты веб-разработчика&quot;.</li>
+        <li>Затем выберите &quot;Консоль&quot;.</li>
+    </ul>
+    <h2>Edge</h2>
+    <ul>
+        <li>Открыть браузер.</li>
+        <li>В меню выберите &quot;Инструменты разработчика&quot;.</li>
+        <li>Затем выберите &quot;Консоль&quot;.</li>
+    </ul>
+    <h2>Opera</h2>
+    <ul>
+        <li>Открыть браузер.</li>
+        <li>В меню выберите &quot;Разработка&quot;.</li>
+        <li>Из &quot;Разработка&quot; выберите &quot;Инструменты разработчика&quot;.<br></li>
+        <li>Затем выберите &quot;Консоль&quot;.</li>
+    </ul>
+    <h2>Safari</h2>
+    <ul>
+        <li>Перейдите в Safari, Настройки, Дополнительно в главном меню..</li>
+        <li>Установите флажок &quot;Включить показывать меню разработки в строке меню&quot;.</li>
+        <li>При появлении новой опции &quot;Develop&quot; появляется в меню:<br>Выберите &quot;Show Error Console&quot;.</li>
+    </ul>
+    <hr>
+    <h2>А вы знаете?</h2>
+    <div class="w3-panel w3-note">
+        <p><strong>Отладка - это процесс тестирования, поиска и устранения багов (ошибок) в компьютерных программах</strong>.<br>Первой известной компьютерной ошибкой был настоящий жук (<i>bug - с анг. насекомое</i>), застрявший в электронике. Именно поэтому ошибки в программах стали называть багами (жуками).</p>
+    </div>
+    <hr>
+    <div class="w3-clear nextprev">
+        <a class="w3-left w3-btn" href="js_json.html">&#10094; Prev</a>
+        <a class="w3-right w3-btn" href="js_conventions.html">Next &#10095;</a>
     </div>
 </article>
 <div class="adver">
@@ -712,6 +648,18 @@ var <input name='ex1' maxlength='7' style='width: 80px;'> = "<input name='ex2' m
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
     <!-- adrightbar_media_square -->
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="5246865704" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060216941760396" crossorigin="anonymous"></script>
+    <!-- adrightbar_media_vertical -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4060216941760396" data-ad-slot="7795161518" data-ad-format="auto" data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 <div class='sidesection' style='margin-left:auto;margin-right:auto;max-width:230px'>

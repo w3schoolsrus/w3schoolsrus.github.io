@@ -6,9 +6,9 @@
 <link rel='icon' href='../favicon.ico' type='image/x-icon'>
 <link rel='stylesheet' href='../styles/w3.css'>
 <link rel='stylesheet' href='../styles/external.css'>
-<title>AppML Учебник. Уроки для начинающих. W3Schools на русском</title>
-<meta name='description' content='AppML Учебник. Применение языка JavaScript. Уроки для начинающих. W3Schools на русском'>
-<link rel="canonical" href="https://w3schoolsrus.github.io/appml/index.html" />
+  <title>AppML Прототип. Уроки для начинающих. W3Schools на русском</title>
+  <meta name='description' content='AppML Прототип. Создание прототипа веб-приложения с помощью AppML. Создание локальной базы данных с несколькими записями. Уроки для начинающих. W3Schools на русском'>
+  <link rel='canonical' href='https://w3schoolsrus.github.io/appml/appml_prototype.html' />
 <div class='w3-container top'>
     <a class='w3schools-logo notranslate' href='../index.html'>W3schoolsRUS<span class='dotcom w3-hide-small'>. на русском</span></a>
     <div class='w3-right w3-hide-small w3-wide toptext' style="font-family:'Segoe UI',Arial,sans-serif">ЛУЧШИЙ САЙТ ДЛЯ ВЕБ-РАЗРАБОТЧИКОВ
@@ -297,139 +297,172 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>            <a href='index.html'><img src='../images/appml.jpg' alt='AppML. Уроки для начинающих' class='w3-left w3-padding' title='AppML для начинающих. W3Schools на русском' style='width:120px;'></a>
-<article>
-    <h1><span class='color_h1'>AppML</span> Учебник</h1>
+  <article>
+    <h1><span class='color_h1'>AppML Прототип</span></h1>
     <div class='w3-clear nextprev'>
-        <a class='w3-left w3-button w3-green' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-button w3-green' href='appml_howto.html'>Next &#10095;</a>
-    </div>
-
-    <div class='w3-panel w3-info w3-center'>
-        <p style='font-size:35px'>AppML переносит данные в HTML</p>
-        <p style='font-size:25px'>"Нет глупых веб-приложений"</p>
+      <a class='w3-left w3-button w3-green' href='appml_client.html'>&#10094; Prev</a>
+      <a class='w3-right w3-button w3-green' href='appml_lists.html'>Next &#10095;</a>
     </div>
     <hr>
 
-    <h2>Введение в AppML</h2>
-    <p>Интернет быстро растет, а объём данных в киберпространстве растёт ещё быстрее.</p>
-    <p>Каждый день разрабатываются новые информационные системы, каждый день подключаются новые пользователи, а доступ к данным возможен 24/7 из любой точки мира.</p>
-
-    <p class='w3-large'><i>Крайне необходимы более быстрые и лучшие методы разработки программного обеспечения</i>.</p>
-
-    <p>В соответствии с этим W3Schools разработала очень гибкую технику для извлечения, отображения и обработки данных без необходимости традиционного программирования.</p>
-
-    <p>Сотрудничая с Яном Эгилем Рефснесом, W3schools разработала словарь для определения веб-приложений.
-        Словарь называется <strong>AppML (Application Modeling Language - Язык моделирования приложений)</strong>.</p>
-
-    <p>AppML использует самые современные методы и идеи современной веб-разработки с упором на:</p>
-    <ul style='list-style-type:square;'>
-        <li>Малобюджетность</li>
-        <li>Быстрая и гибкая веб-разработка</li>
-        <li>Оптимизация для облачных вычислений</li>
-        <li>Высокая скорость и низкое потребление полосы пропускания</li>
-        <li>Архитектура MVC (Model View Controller - Контроллер представления модели)</li>
-        <li>Полное отделение содержания от презентации</li>
-        <li>Высокая масштабируемость и тестируемость</li>
-        <li>Простая настройка и реконфигурация (перенастройка)</li>
-    </ul>
-
-    <p>AppML поддерживает функции, которые вы найдёте в других фреймворках, таких как React, Angular и Vue, но AppML намного проще в использовании и намного проще для понимания.</p>
+    <p class='intro'>В этом разделе мы создадим <strong>прототип веб-приложения</strong>.</p>
     <hr>
 
-    <h2>Что такое AppML?</h2>
-    <p>AppML означает <strong>App</strong>lication <strong>M</strong>odeling <strong>L</strong>anguage - Язык Моделирования Приложений.</p>
-    <p>AppML не является языком программирования. Это описательный язык (язык описания приложений).</p>
-    <p>Он основан на знакомых концепциях веб-приложений, таких как:</p>
-    <ul>
-        <li>Формы</li>
-        <li>Списки</li>
-        <li>Отчёты</li>
-        <li>Фильтры</li>
-        <li>Функции</li>
-        <li>Базы данных</li>
-    </ul>
-
-    <p>AppML работает на любой HTML-странице. Специальная установка не требуется.</p>
-    <p>AppML - это инструмент для передачи данных в HTML-приложения:</p>
-    <ul>
-        <li>Из объектов</li>
-        <li>Из JSON файлов</li>
-        <li>Из текстовых файлов</li>
-        <li>из XML файлов</li>
-        <li>Из базы данных</li>
-    </ul>
-
-    <p>
-        <a class='w3-btn' href='tryappml_from_object.html' target='_blank'>Объекты</a>
-        <a class='w3-btn' href='tryappml_from_json.html' target='_blank'>JSON файлы</a><br><br>
-        <a class='w3-btn' href='tryappml_from_txt.html' target='_blank'>Текстовые файлы</a>
-        <a class='w3-btn' href='tryappml_from_xml.html' target='_blank'>XML файлы</a><br><br>
-        <a class='w3-btn' href='tryappml_customerslist_php.html' target='_blank'>PHP/MySQL</a>
-        <a class='w3-btn' href='tryappml_customerslist_aspx.html' target='_blank'>ASP.NET/SQL</a>
-    </p>
-    <hr>
-
-    <h2>Почему AppML?</h2>
-
-    <p>HTML не очень подходит для описания веб-приложений.</p>
-    <p>AppML создан для веб-приложений:</p>
-    <ul>
-        <li>AppML расширяет HTML с помощью <strong>атрибутов</strong> данных</li>
-        <li>AppML добавляет в HTML <strong>контроллеры</strong>, для управления поведением HTML данных.</li>
-    </ul>
-    <p>AppML очень прост для понимания и необычайно быстр в разработке.</p>
-    <hr>
-
-    <h2>AppML Пример</h2>
-    <p>Этот пример показывает, как легко AppML может переносить данные в HTML:</p>
-
+    <h2>Создать HTML прототип</h2>
+    <p>Сначала создайте достойный <strong>HTML прототип</strong>, используя свой любимый CSS.</p>
+    <p>В этом примере мы использовали фреймворк W3.CSS:</p>
     <div class='w3-example'>
-        <h3>AppML Пример</h3>
-        <div class='w3-code notranslate htmlHigh'>
-            &lt;!DOCTYPE html&gt;<br>
-            &lt;html lang="ru"&gt;<br><br>
-            &lt;title&gt;Клиенты&lt;/title&gt;<br>
-            &lt;link rel="stylesheet" href="style.css"&gt;<br>
-            &lt;script src="https://w3schoolsrus.github.io/appml/2.0.3/appml.js"&gt;&lt;/script&gt;<br><br>
-            &lt;body&gt;<br>
-            &lt;h1&gt;Клиенты&lt;/h1&gt;<br><br>
-            &lt;table appml-data="https://w3schoolsrus.github.io/appml/customers.js"&gt;<br>
-            &lt;tr&gt;<br>&nbsp; &lt;th&gt;Клиент&lt;/th&gt;<br>
-            &nbsp; &lt;th&gt;Город&lt;/th&gt;<br>
-            &nbsp; &lt;th&gt;Страна&lt;/th&gt;<br>
-            &lt;/tr&gt;<br>
-            &lt;tr appml-repeat="records"&gt;<br>
-            &nbsp; &lt;td&gt;{{CustomerName}}&lt;/td&gt;<br>
-            &nbsp; &lt;td&gt;{{City}}&lt;/td&gt;<br>
-            &nbsp; &lt;td&gt;{{Country}}&lt;/td&gt;<br>
-            &lt;/tr&gt;<br>
-            &lt;/table&gt;<br>
-            <br>
-            &lt;/body&gt;<br>
-            &lt;/html&gt;
-        </div>
-        <a class='w3-btn w3-margin-bottom' href='tryappml_intro.html' target='_blank'>Попробуйте сами &raquo;</a>
+      <h3>Пример</h3>
+      <div class='w3-code notranslate htmlHigh'>
+        &lt;!DOCTYPE html&gt;<br>&lt;html lang="ru"&gt;<br><br>&lt;title&gt;Клиенты&lt;/title&gt;<br>
+        &lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt; <br><br>
+        &lt;body&gt;<br>
+        <br>&lt;div class="w3-container"&gt;<br>&lt;h1&gt;Клиенты&lt;/h1&gt;<br>
+        &lt;table class="w3-table-all"&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Клиент&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Город&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Страна&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{CustomerName}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;td&gt;{{City}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{Country}}&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        &lt;/div&gt;<br>
+        <br>&lt;/body&gt;<br>&lt;/html&gt;
+      </div>
+      <a class="w3-btn w3-margin-bottom" href="tryappml_proto_list.html" target="_blank">Попробуйте сами &raquo;</a>
     </div>
 
-    <div class='w3-panel w3-note'>
-        <p><strong>AppML</strong> - это инструмент для простой, быстрой и гибкой разработки веб-приложений.</p>
+    <div class="w3-panel w3-note">
+      <p>{{ ... }} Заполнители для будущих данных.</p>
     </div>
     <hr>
 
-    <h2>Легко и гибко</h2>
-    <p>На сегодняшнем рынке веб-разработок существует множество фреймворков (инструментов или библиотек), предназначенных для расширения HTML.</p>
-    <p>Большинство этих фреймворков манипулируют HTML, CSS или JavaScript таким образом, что их трудно использовать (особенно при использовании в сочетании).</p>
-    <p>AppML - другое дело. У вас есть полная свобода в применении HTML, CSS и JavaScript.</p>
-    <p>AppML упрощает создание одностраничных приложений (SPA - Single Page Applications) очень простым и эффективным способом.</p>
-    <p>Даже если вы никогда раньше не занимались веб-разработкой, вы обнаружите AppML очень простым в использовании.</p>
-    <p>Если вы опытный веб-разработчик, вы скоро откроете для себя всю мощь AppML.</p>
+    <h2>Добавить AppML</h2>
+    <p>После того, как вы создали HTML прототип, вы можете добавить AppML:</p>
+    <div class="w3-example">
+      <h3>Пример</h3>
+      <div class="w3-code notranslate htmlHigh">
+        &lt;!DOCTYPE html&gt;<br>&lt;html lang="ru"&gt;<br>
+        &lt;title&gt;Клиенты&lt;/title&gt;<br>&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;<br>
+        <strong>&lt;script src="https://www.w3schools.com/appml/2.0.3/appml.js"&gt;&lt;/script&gt;<br>
+          &lt;script src="https://www.w3schools.com/appml/2.0.3/appml_sql.js"&gt;&lt;/script&gt;<br>
+        </strong>&lt;body&gt;<br><br>&lt;div class="w3-container" <strong>appml-data="customers.js"</strong>&gt;<br>
+        &lt;h1&gt;Клиенты&lt;/h1&gt;<br>&lt;table class="w3-table-all"&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Клиент&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Город&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Страна&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr<strong> appml-repeat="records"</strong>&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;td&gt;{{CustomerName}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{City}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;td&gt;{{Country}}&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+      </div>
+      <a class="w3-btn w3-margin-bottom" href="tryappml_proto_list_1.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
 
+    <p>Добавить AppML:</p>
+    <p><strong>&lt;script src="https://www.w3schools.com/appml/2.0.3/appml.js"&gt;</strong></p>
+    <p>Добавить локальную базу данных WebSQL:</p>
+    <p><strong>&lt;script src="https://www.w3schools.com/appml/2.0.3/appml_sql.js"&gt;</strong></p>
+    <p>Определите источник данных:</p>
+    <p><strong>appml-data="customers.js"</strong></p>
+    <p>Определите элемент HTML, который будет повторяться для каждой записи в записях:</p>
+    <p><strong>appml_repeat="records"</strong></p>
+
+    <div class="w3-panel w3-note">
+      <p>Чтобы упростить задачу, начните с локальных данных, например <strong> <a href="show_customers.html" target="_blank">customers.js</a></strong> перед подключением к базе данных.</p>
+    </div>
+    <hr>
+
+    <h2>Создать AppML модель</h2>
+    <p>Чтобы иметь возможность использовать базу данных, вам понадобится модель базы данных AppML:</p>
+
+    <div class="w3-example">
+      <h3>proto_customers.js</h3>
+      <div class="w3-code notranslate jsHigh">
+        {<br>"rowsperpage" : 10,<br>"database" : {<br>"connection"
+        : "localmysql",<br>"sql" : "Select * from Customers",<br>"orderby"
+        : "CustomerName",<br>}</div>
+    </div>
+
+    <p>Если у вас нет локальной базы данных, вы можете использовать модель AppML для создания базы данных Web SQL.</p>
+    <p>Чтобы создать таблицу с одной записью, используйте такую модель:<strong>
+        <a href="proto_customers_single.html" target="_blank">proto_customers_single.js</a></strong>.</p>
+
+    <div class="w3-panel w3-note">
+      <p>Создание локальной базы данных не работает в IE или Firefox. Используйте Chrome или Safari.</p>
+    </div>
+
+    <p>Используйте модель в своем приложении. Измените источник данных на <strong>local?model=proto_customers_single</strong>:</p>
+
+    <div class="w3-example">
+      <h3>Пример</h3>
+      <div class="w3-code notranslate htmlHigh">
+        &lt;div class="w3-container" appml-data="<strong>local?model=proto_customers_single</strong>"&gt;<br>
+        &lt;h1&gt;Клиенты&lt;/h1&gt;<br>&lt;table class="w3-table-all"&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Клиент&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Город&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Страна&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr appml-repeat="records"&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;td&gt;{{CustomerName}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{City}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;td&gt;{{Country}}&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;<br>&lt;/div&gt;</div>
+      <a class="w3-btn w3-margin-bottom" href="tryappml_proto_list_3.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+
+    <h2>Создание локальной базы данных с несколькими записями</h2>
+    <p>Чтобы создать таблицу с несколькими записями, используйте такую модель:<strong>
+        <a href="proto_customers_all.html" target="_blank">proto_customers_all.js</a></strong>.</p>
+    <p>Измените источник данных на <strong>local?model=proto_customers_all</strong></p>
+
+    <div class="w3-example">
+      <h3>Пример</h3>
+      <div class="w3-code notranslate htmlHigh">
+        &lt;div class="w3-container" appml-data="<strong>local?model=proto_customers_all</strong>"&gt;<br>
+        &lt;h1&gt;Клиенты&lt;/h1&gt;<br>&lt;table class="w3-table-all"&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Клиент&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Город&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Страна&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr appml-repeat="records"&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;td&gt;{{CustomerName}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{City}}&lt;/td&gt;<br>&nbsp;
+        &lt;td&gt;{{Country}}&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&lt;/table&gt;<br>&lt;/div&gt;</div>
+      <a class="w3-btn w3-margin-bottom" href="tryappml_proto_list_4.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
+    <hr>
+
+    <h2>Добавить шаблон навигации</h2>
+    <p>Предположим, вы хотите, чтобы все ваши приложения имели общую панель навигации:</p>
+
+    <div class="w3-bar w3-border">
+      <button class="w3-button" id='appmlbtn_first'>&#10094;&#10094;</button>
+      <button class="w3-button" id='appmlbtn_previous'>&#10094;</button>
+      <button class="w3-button w3-hover-none" id='appmlbtn_text'></button>
+      <button class="w3-button" id='appmlbtn_next'>&#10095;</button>
+      <button class="w3-button" id='appmlbtn_last'>&#10095;&#10095;</button>
+      <button class="w3-button w3-green" id='appmlbtn_query'>Filter</button>
+    </div>
+
+    <p>Создайте для него HTML-шаблон:</p>
+    <div class="w3-example">
+      <h3>inc_listcommands.html</h3>
+      <div class="w3-code notranslate htmlHigh">
+        &lt;div class="w3-bar w3-border w3-section"&gt;<br>
+        &lt;button class="w3-button" id='appmlbtn_first'&gt;&amp;#10094;&amp;#10094;&lt;/button&gt;<br>
+        &lt;button class="w3-button" id='appmlbtn_previous'&gt;&amp;#10094;&lt;/button&gt;<br>
+        &lt;button class="w3-button w3-hover-none" id='appmlbtn_text'&gt;&lt;/button&gt;<br>
+        &lt;button class="w3-button" id='appmlbtn_next'&gt;&amp;#10095;&lt;/button&gt;<br>
+        &lt;button class="w3-button" id='appmlbtn_last'&gt;&amp;#10095;&amp;#10095;&lt;/button&gt;<br>
+        &lt;button class="w3-button w3-green" id='appmlbtn_query'&gt;Filter&lt;/button&gt;<br>
+        &lt;/div&gt;<br><br>
+        &lt;div id="appmlmessage"&gt;&lt;/div&gt;
+      </div>
+    </div>
+    <p>Сохраните шаблон в файле с собственным именем, например "inc_listcommands.html".</p>
+    <p>Включите шаблон в свой прототип с атрибутом <strong>appml-include-html</strong>:</p>
+
+    <div class="w3-example">
+      <h3>Пример</h3>
+      <div class="w3-code notranslate htmlHigh">
+        &lt;div class="w3-container" appml-data="local?model=proto_customers_all"&gt;<br>
+        &lt;h1&gt;Клиенты&lt;/h1&gt;<br>&lt;div <strong>appml-include-html="inc_listcommands.html"</strong>&gt;&lt;/div&gt;<br>
+        <br>&lt;table class="w3-table-all"&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Клиент&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th&gt;Город&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+        &lt;th&gt;Страна&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr appml-repeat="records"&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{CustomerName}}&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{City}}&lt;/td&gt;
+        <br>&nbsp;&nbsp;&nbsp; &lt;td&gt;{{Country}}&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br> &lt;/table&gt;<br>&lt;/div&gt;</div>
+      <a class="w3-btn w3-margin-bottom" href="tryappml_proto_list_2.html" target="_blank">Попробуйте сами &raquo;</a>
+    </div>
     <hr>
     <div class='w3-clear nextprev'>
-        <a class='w3-left w3-button w3-green' href='../index.html'>&#10094; Home</a>
-        <a class='w3-right w3-button w3-green' href='appml_howto.html'>Next &#10095;</a>
+      <a class='w3-left w3-button w3-green' href='appml_client.html'>&#10094; Prev</a>
+      <a class='w3-right w3-button w3-green' href='appml_lists.html'>Next &#10095;</a>
     </div>
-</article>
+  </article>
 <div class="w3-hide-medium w3-hide-small">
     <hr>
     <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
@@ -439,7 +472,7 @@
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-</div></div>
+</div>  </div>
 <!--Right sidebar-->
 <div class='w3-col l2 m12' id='right'>
     <div class='sidesection w3-light-gray' style='padding-bottom: 5px'>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-<title>Что такое Дорожные карты веб-разработки? Ответы для начинающих веб-разработчиков</title>
+<title>Что такое HTTP? Ответы для начинающих веб-разработчиков</title>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Что означает дорожная карта? Для чего нужна дорожная карта веб-разработки? С чего начинать обучение веб-разработчику? Как создать сайт? Уроки для начинающих. Основы веб-программирования. W3Schools на русском'>
+<meta name='description' content='Что означает HTTP? Что такое протокол передачи данных? В чем разница между HTTP и HTTPS? Как создать сайт? Уроки для начинающих. Основы веб-программирования. W3Schools на русском'>
 <link rel='icon' href='../favicon.ico' type='image/x-icon'>
 <link rel='stylesheet' href='../w3css/4/w3.css'>
+<link rel="stylesheet" href="../cdn/font-awesome/5.11.2/css/all.min.css">
 </head>
 
 <body>
@@ -267,191 +268,101 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Дорожные карты веб-разработки</h1>
+<h1>Что такое HTTP?</h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="whatis_http.html">Next &#10095;</a>
+  <a class="w3-left w3-btn w3-green" href="default.html">&#10094; Prev</a>
+  <a class="w3-right w3-btn w3-green" href="whatis_html.html">Next &#10095;</a>
 </div>
 <hr>
-<h2>Что такое дорожная карта?</h2>
-<p><strong>Дорожная карта</strong> - это наглядное представление пошагового сценария развития определенного объекта – какого-то продукта, класса продуктов, какой-то технологии, группы сопутствующих технологий и т.д. Иными словами - это план действий по достижению определённых целей и решению поставленных задач с применением необходимых средств.</p>
-<p>Для веб-разработчиков есть три пути – <strong>Front-end</strong>, <strong>Back-end</strong> и <strong>DevOps</strong>. Каждое из этих направлений имеет свои особенности и для каждого направления веб-разработки существует своя дорожная карта.</p>
+
+<div class="w3-cell-row w3-card-2">
+<div class="w3-cell w3-white w3-hide-small w3-center" style="padding:16px;width:150px">
+  <img class="w3-img" alt="Что такое HTTP?" title="Что такое HTTP?" src="img_http.jpg" style="width:110px">
+</div>
+<div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top" style="padding:20px;">
+<p><b>HTTP</b> расшифровывается как <b>H</b>yper <b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol - Протокол передачи гипертекста</p>
+<p><b>WWW</b> обозначает связь между <b>веб-клиентами</b> и <b>веб-серверами</b></p>
+<p>Связь между клиентскими компьютерами и веб-серверами осуществляется путем отправки <b>HTTP-запросов</b> и получения <b>HTTP-ответов</b></p>
+</div>
+</div>
 <hr>
 
-<h1 class="w3-center">Дорожная карта для фронтэнд-разработки (Front-End)</h1>
-
-<div style="padding:16px" class="w3-blue-grey w3-card-4">
-<div class="w3-container w3-center">
-<h1>ШАГ 1<br>Изучите основы</h1>
-</div>
-<div class="w3-panel w3-white w3-card">
-<p>Каждый <b>веб-разработчик</b> должен иметь общее представление и знать основы <b>HTML</b>, <b>CSS</b> и <b>JavaScript</b>.</p>
-<p><b>Адаптивный веб-дизайн </b> используется во всех типах современной веб-разработки.</p>
-<p><b>ECMAScript 5</b> (JavaScript 5) поддерживается во всех современных браузерах. Обратите внимание на это, особенно на новые функции массива.</p>
-</div>
-
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">HTML</h2>
-  <a href="whatis_html.html" class="w3-bar-item w3-button w3-orange">HTML</a>
-  <a href="whatis_http.html" class="w3-bar-item w3-button w3-orange">HTTP / XHR</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">CSS</h2>
-  <a href="whatis_css.html" class="w3-bar-item w3-button w3-orange">CSS</a>
-  <a href="whatis_responsive.html" class="w3-bar-item w3-button w3-orange">CSS Адаптивность</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">JavaScript</h2>
-  <a href="whatis_js.html" class="w3-bar-item w3-button w3-orange">JavaScript</a>
-  <a href="whatis_es5.html" class="w3-bar-item w3-button w3-orange">ECMAScript 5</a></div>
-</div>
-</div>
-</div>
-
+<h2>World Wide Web коммуникация</h2>
+<p>Всемирная паутина (World Wide Web) - это общение между <strong>клиентами</strong> и <strong>веб-серверами</strong>.</p>
+<p><strong>Клиенты</strong> - это обычно браузеры (Chrome, Firefox, Edge, Safari, Opera), но также могут быть программы любого типа или устройства.</p>
+<p><strong>Серверы </strong> чаще всего являются компьютерами в облаке (множество компьютеров, соединённых вместе).</p>
 <hr>
-<div style="padding:16px 16px 32px 16px" class="w3-blue-grey w3-card-4">
-<div class="w3-container w3-center">
-<h1>ШАГ 2<br>Копайте глубже</h1>
-</div>
 
-<div class="w3-panel w3-white w3-card">
-<p>Когда вы освоитесь с <b>HTML</b> и <b>CSS</b>, начинайте копать глубже - т.е. изучайте более подробно.</p>
-<p>Вы должны научиться использовать <b>карты</b>, <b>шрифты</b> и <b>иконки</b> в HTML.</p>
-<p>Со стороны <b>JavaScript</b> вы должны узнать, как получить доступ к <b>HTML DOM</b>.</p>
-<p>Вы также должны научиться использовать <b>AJAX</b> и <b>JSON</b> для выполнения запросов к серверу.</p>
+<div class="w3-row">
+<div class="w3-col m4 w3-center">
+<i class="fa fa-desktop" style="font-size:70px"></i>
+<i class="fa fa-arrows-h" style="font-size:70px"></i>
+<br>Веб-клиент
 </div>
+<div class="w3-col m4 w3-center">
+<i class="fa fa-mixcloud" style="font-size:70px"></i>
+<i class="fa fa-arrows-h" style="font-size:70px"></i>
+<br>Облако
+</div>
+<div class="w3-col m4 w3-center">
+<i class="fa fa-server" style="font-size:60px"></i>
+<i class="fa fa-database" style="font-size:70px"></i>
+<i class="fa fa-database" style="font-size:70px"></i>
+<br>Веб-сервер
+</div>
+<div class="w3-col m2 w3-center">
 
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">HTML</h2>
-  <a href="whatis_htmldom.html" class="w3-bar-item w3-button w3-orange">HTML DOM</a>
-  <a href="whatis_google_maps.html" class="w3-bar-item w3-button w3-orange">Google карты</a>
-  <a href="whatis_google_fonts.html" class="w3-bar-item w3-button w3-orange">Google шрифты</a>
-  <a href="whatis_google_charts.html" class="w3-bar-item w3-button w3-orange">Google диаграммы</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">CSS</h2>
-  <a href="whatis_icons.html" class="w3-bar-item w3-button w3-orange">CSS иконки</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">JavaScript</h2>
-  <a href="whatis_xml.html" class="w3-bar-item w3-button w3-orange">XML</a>
-  <a href="whatis_json.html" class="w3-bar-item w3-button w3-orange">JSON</a>
-  <a href="whatis_ajax.html" class="w3-bar-item w3-button w3-orange">AJAX</a>
-</div>
-</div>
 </div>
 </div>
 
 <hr>
-<div class="w3-dark-grey w3-card-4" style="padding:16px 16px 32px 16px">
-<div class="w3-container w3-center">
-<h1>ШАГ 3<br>Выберите фреймворки</h1>
-</div>
-<div class="w3-panel w3-white w3-card">
-<p>Теперь пришло время взглянуть на некоторые <b>фреймворки</b>.</p>
-<p>На стороне <b>CSS</b> вы должны выбрать платформу для создания адаптивного веб-дизайна:<br>
-<b>Bootstrap</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>Material Design</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>W3.CSS</b></p>
-<p>Со стороны <b>JavaScript</b> вы должны изучить хотя бы один современный фреймворк:<br>
-<b>React.js</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>Angular.js</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>Vue.js</b>
-&nbsp;&nbsp;/&nbsp;&nbsp;<b>W3.JS</b></p>
-<p>Возможно, популярность <b>jQuery</b> достигла вершины, но это всё ещё самый используемый фреймворк JavaScript в Интернете. Ему также следует уделить внимание.</p>
-</div>
-
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">CSS</h2>
-  <a href="whatis_bootstrap.html" class="w3-bar-item w3-button w3-orange">Bootstrap</a>
-  <a href="whatis_w3css.html" class="w3-bar-item w3-button w3-orange">W3.CSS</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">JavaScript</h2>
-  <a class="w3-bar-item w3-button w3-orange" href="whatis_jquery.html">jQuery</a>
-  <a href="whatis_angularjs.html" class="w3-bar-item w3-button w3-orange">AngularJS</a>
-  <a href="whatis_vue.html" class="w3-bar-item w3-button w3-orange">Vue.js</a>
-  <a href="whatis_w3js.html" class="w3-bar-item w3-button w3-orange">W3.JS</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-card-4 w3-bar-block w3-white">
-  <h2 class="w3-bar-item">XML</h2>
-  <a href="../xml/xsl_intro.html" class="w3-bar-item w3-button w3-orange">XSLT</a>
-  <a href="../xml/xpath_intro.html" class="w3-bar-item w3-button w3-orange">XPath</a>
-  <a href="../xml/xquery_intro.html" class="w3-bar-item w3-button w3-orange">XQuery</a>
-</div>
-</div>
-</div>
-</div>
-<hr>
-<p><img alt="Roadmap" src="img_frontend.jpg" style="width:100%"></p>
-<p class="w3-center">Диаграмма, созданная GitHub пользователем Kamranahmedse:
-<a target="_blank" href="https://github.com/kamranahmedse"><br>https://github.com/kamranahmedse</a></p>
+<h2>HTTP Запрос / Ответ</h2>
+<p>Связь между клиентами и серверами осуществляется с помощью <b>запросов</b> и <b>ответов.</b>:</p>
+<ol>
+<li>Клиент (браузер) отправляет <strong>HTTP-запрос</strong> в Интернет.</li>
+<li>Веб-сервер получает запрос</li>
+<li>Сервер запускает приложение для обработки запроса</li>
+<li>Сервер возвращает <strong>HTTP-ответ</strong> (вывод) в браузер</li>
+<li>Клиент (браузер) получает ответ</li>
+</ol>
 
 <hr>
-<h1 class="w3-center">Дорожные карты для бэкэнд-разработки (Back-End)</h1>
-<div class="w3-black w3-card-4" style="padding:16px 16px 32px 16px">
-<h1 class="w3-center">ШАГ 4<br>Дорожные карты бэкэнда</h1>
+<h2>Круг HTTP-запросов</h2>
+<p>Типичный круг HTTP-запросов / ответов:</p>
+<ol>
+<li>Браузер запрашивает страницу HTML. Сервер возвращает файл HTML.</li>
+<li>Браузер запрашивает таблицу стилей. Сервер возвращает файл CSS.</li>
+<li>Браузер запрашивает изображение в формате JPG. Сервер возвращает файл JPG.</li>
+<li>Браузер запрашивает код JavaScript. Сервер возвращает файл JS</li>
+<li>Браузер запрашивает данные. Сервер возвращает данные (в формате XML или JSON).</li>
+</ol>
 
-<div class="w3-row-padding" style="margin:0 -16px 0 -16px">
-
-<div class="w3-half">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">Fullstack (полный набор)</h2>
-  <a href="../sql/default.html" class="w3-bar-item w3-button w3-orange">SQL</a>
-  <a href="../php/default.html" class="w3-bar-item w3-button w3-orange">PHP</a>
-  <a href="../asp/default.html" class="w3-bar-item w3-button w3-orange">ASP</a>
-  <a href="../python/default.html" class="w3-bar-item w3-button w3-orange">Python</a>
-</div>
-</div>
-
-<div class="w3-half">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">Fullstack JS (полный набор JavaScript)</h2>
-  <a href="../sql/default.html" class="w3-bar-item w3-button w3-orange">SQL</a>
-  <a href="../nodejs/default.html" class="w3-bar-item w3-button w3-orange">Node.js</a>
-  <a href="../nodejs/nodejs_mysql.html" class="w3-bar-item w3-button w3-orange">MySQL</a>
-  <a href="../nodejs/nodejs_mongodb.html" class="w3-bar-item w3-button w3-orange">Mongo.db</a>
-</div>
-</div>
-</div>
-</div>
-
-<img alt="Roadmap" src="img_backend.jpg" style="width:100%">
-<p class="w3-center">Диаграмма, созданная GitHub пользователем Kamranahmedse:
-<a target="_blank" href="https://github.com/kamranahmedse"><br>https://github.com/kamranahmedse</a></p>
 <hr>
+<h2>XHR - XML Http Запрос</h2>
+<p>Все браузеры имеют встроенный <b>XMLHttpRequest Объект (XHR)</b>.</p>
+<p>XHR - это объект JavaScript, который используется для передачи данных между веб-браузером и веб-сервером.</p>
+<p>XHR часто используется для запроса и получения данных с целью изменения веб-страницы.</p>
 
-<h3>Что требуется для любого направления веб-разработки?</h3>
-<p>Это знания и навыки:</p>
+<p>Несмотря на XML и Http в названии, XHR используется с протоколами, отличными от HTTP, и данные могут быть разных типов, таких как
+<a href="whatis_html.html">HTML</a>, <a href="whatis_css.html">CSS</a>,
+<a href="whatis_xml.html">XML</a>, <a href="whatis_json.html">JSON</a> и простой текст.</p>
+
+<p>Объект XHR - это <strong>Мечта веб-разработчиков</strong>, потому что вы сможете:</p>
 <ul>
-  <li>Git - система контроля версий</li>
-  <li>Основы использование терминала</li>
-  <li>Структуры данных и алгоритмы</li>
-  <li>GutHub. Создание репозиториев</li>
-  <li>Семантическое управление версиями</li>
-  <li>SSH, HTTP/HTTPS и API</li>
-  <li>Шаблоны проектирования</li>
-  <li>Кодировка символов</li>
+  <li>Обновлять веб-страницы без перезагрузки страницы</li>
+  <li>Производить запрос данных с сервера - после загрузки страницы</li>
+  <li>Получать данные с сервера - после загрузки страницы</li>
+  <li>Отправлять данные на сервер - в фоновом режиме</li>
 </ul>
 
+<p>Объект XHR является основной концепцией <a href="whatis_ajax.html"><b>AJAX</b></a> и
+<a href="whatis_json.html"><b>JSON</b></a>:</p>
+<p><img src="img_ajax.gif" alt="AJAX"></p>
+
 <hr>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="whatis_http.html">Next &#10095;</a>
+  <a class="w3-left w3-btn w3-green" href="default.html">&#10094; Prev</a>
+  <a class="w3-right w3-btn w3-green" href="whatis_html.html">Next &#10095;</a>
 </div>
 
 <hr>
@@ -461,7 +372,7 @@
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / whatis / default.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / whatis / whatis_http.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');

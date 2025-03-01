@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-<title>Что такое Дорожные карты веб-разработки? Ответы для начинающих веб-разработчиков</title>
+<title>Что такое Адаптивность? Ответы для начинающих веб-разработчиков</title>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Что означает дорожная карта? Для чего нужна дорожная карта веб-разработки? С чего начинать обучение веб-разработчику? Как создать сайт? Уроки для начинающих. Основы веб-программирования. W3Schools на русском'>
+<meta name='description' content='Что такое адаптивный веб-дизайн? Что означает адаптивность сайта? Для чего нужно создавать сайты адаптивными? Как создать адаптивный сайт? Уроки для начинающих. Основы веб-программирования. W3Schools на русском'>
 <link rel='icon' href='../favicon.ico' type='image/x-icon'>
 <link rel='stylesheet' href='../w3css/4/w3.css'>
+<style>
+.menu {width:20%; float:left;}
+.main {width:60%; float:left;}
+.right {width:20%; float:left;
+}
+@media (max-width:800px) {
+.menu {width:100%;}
+.main {width:100%;}
+.right {width:100%;}
+}
+</style>
 </head>
 
 <body>
@@ -267,191 +278,168 @@
   <div class='w3-row w3-white'>
     <div class='w3-col l10 m12' id='main'>
 
-<h1>Дорожные карты веб-разработки</h1>
+<h1>Что такое адаптивный веб-дизайн?</h1>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="whatis_http.html">Next &#10095;</a>
+<a class="w3-left w3-btn w3-green" href="whatis_css.html">&#10094; Prev</a>
+<a class="w3-right w3-btn w3-green" href="whatis_js.html">Next &#10095;</a>
 </div>
 <hr>
-<h2>Что такое дорожная карта?</h2>
-<p><strong>Дорожная карта</strong> - это наглядное представление пошагового сценария развития определенного объекта – какого-то продукта, класса продуктов, какой-то технологии, группы сопутствующих технологий и т.д. Иными словами - это план действий по достижению определённых целей и решению поставленных задач с применением необходимых средств.</p>
-<p>Для веб-разработчиков есть три пути – <strong>Front-end</strong>, <strong>Back-end</strong> и <strong>DevOps</strong>. Каждое из этих направлений имеет свои особенности и для каждого направления веб-разработки существует своя дорожная карта.</p>
+<div class="w3-cell-row w3-card-2">
+<div class="w3-cell w3-white w3-hide-small w3-center" style="padding:16px;width:150px">
+  <img class="w3-img" alt="Что такое адаптивный веб-дизайн" title="Что такое адаптивный веб-дизайн" src="img_css.jpg" style="width:110px">
+</div>
+<div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top w3-large" style="padding:10px;">
+<p><strong>Адаптивный веб-дизайн</strong> - это использование HTML и CSS для автоматического изменения размера сайта.</p>
+<p><strong>Адаптивный веб-дизайн</strong> - необходим для того, чтобы веб-сайт выглядел хорошо на всех устройствах (настольных компьютерах, планшетах и смартфонах):</p>
+</div>
+</div>
+<br>
+<div class="w3-padding w3-padding-16 w3-light-grey w3-card">
+<img src="img_temp_band.jpg" style="width:100%" alt="Адаптивный дизайн">
+</div>
+<hr>
+<h2>Настройка области просмотра</h2>
+<p>При создании адаптивных веб-страниц добавьте следующий элемент <code class="w3-codespan">&lt;meta&gt;</code> на все свои веб-страницы:</p>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit751b.html?filename=trywhatis_responsive_viewport" target="_blank">Попробуйте сами &raquo;</a>
+</div>
 <hr>
 
-<h1 class="w3-center">Дорожная карта для фронтэнд-разработки (Front-End)</h1>
+<h2>Медиа запросы</h2>
+<p>Медиа-запросы играют важную роль в адаптивных веб-страницах.</p>
+<p>С помощью медиазапросов вы можете определять разные стили для разных размеров браузера.</p>
 
-<div style="padding:16px" class="w3-blue-grey w3-card-4">
-<div class="w3-container w3-center">
-<h1>ШАГ 1<br>Изучите основы</h1>
-</div>
-<div class="w3-panel w3-white w3-card">
-<p>Каждый <b>веб-разработчик</b> должен иметь общее представление и знать основы <b>HTML</b>, <b>CSS</b> и <b>JavaScript</b>.</p>
-<p><b>Адаптивный веб-дизайн </b> используется во всех типах современной веб-разработки.</p>
-<p><b>ECMAScript 5</b> (JavaScript 5) поддерживается во всех современных браузерах. Обратите внимание на это, особенно на новые функции массива.</p>
-</div>
+<p>Пример:<br>
+Измените размер окна браузера, чтобы увидеть, что три элемента ниже будут отображаться горизонтально на больших экранах и вертикально на маленьких экранах:</p>
 
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">HTML</h2>
-  <a href="whatis_html.html" class="w3-bar-item w3-button w3-orange">HTML</a>
-  <a href="whatis_http.html" class="w3-bar-item w3-button w3-orange">HTTP / XHR</a>
+  <div class="w3-row">
+    <div class="menu">
+      <div class="w3-blue w3-padding">Блок слева<br><br><br></div>
+    </div>
+    <div class="main">
+      <div class="w3-light-gray w3-padding">Основной контент<br><br><br></div>
+    </div>
+    <div class="right">
+      <div class="w3-green w3-padding">Блок справа<br><br><br></div>
+    </div>
+  </div>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;style&gt;<br>.left, .right {<br>&nbsp; float: left;<br>&nbsp;
+  width: 20%; /* Ширина составляет 20%, по умолчанию */<br>}<br><br>.main {<br>&nbsp; float: left;<br>&nbsp; width: 60%; /* Ширина составляет 60%, по умолчанию */<br>}<br><br>/* Используйте Media Query для добавления брэкпоинта на 800px: */<br>@media screen and (max-width:800px) {<br>&nbsp;
+  .left , .main, .right {width:100%;}<br>}<br>&lt;/style&gt;
 </div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">CSS</h2>
-  <a href="whatis_css.html" class="w3-bar-item w3-button w3-orange">CSS</a>
-  <a href="whatis_responsive.html" class="w3-bar-item w3-button w3-orange">CSS Адаптивность</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">JavaScript</h2>
-  <a href="whatis_js.html" class="w3-bar-item w3-button w3-orange">JavaScript</a>
-  <a href="whatis_es5.html" class="w3-bar-item w3-button w3-orange">ECMAScript 5</a></div>
-</div>
-</div>
+<a class="w3-btn w3-margin-bottom" href="tryit7b1d.html?filename=trywhatis_responsive_media_query&amp;stacked=h" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<hr>
-<div style="padding:16px 16px 32px 16px" class="w3-blue-grey w3-card-4">
-<div class="w3-container w3-center">
-<h1>ШАГ 2<br>Копайте глубже</h1>
-</div>
-
-<div class="w3-panel w3-white w3-card">
-<p>Когда вы освоитесь с <b>HTML</b> и <b>CSS</b>, начинайте копать глубже - т.е. изучайте более подробно.</p>
-<p>Вы должны научиться использовать <b>карты</b>, <b>шрифты</b> и <b>иконки</b> в HTML.</p>
-<p>Со стороны <b>JavaScript</b> вы должны узнать, как получить доступ к <b>HTML DOM</b>.</p>
-<p>Вы также должны научиться использовать <b>AJAX</b> и <b>JSON</b> для выполнения запросов к серверу.</p>
-</div>
-
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">HTML</h2>
-  <a href="whatis_htmldom.html" class="w3-bar-item w3-button w3-orange">HTML DOM</a>
-  <a href="whatis_google_maps.html" class="w3-bar-item w3-button w3-orange">Google карты</a>
-  <a href="whatis_google_fonts.html" class="w3-bar-item w3-button w3-orange">Google шрифты</a>
-  <a href="whatis_google_charts.html" class="w3-bar-item w3-button w3-orange">Google диаграммы</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">CSS</h2>
-  <a href="whatis_icons.html" class="w3-bar-item w3-button w3-orange">CSS иконки</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">JavaScript</h2>
-  <a href="whatis_xml.html" class="w3-bar-item w3-button w3-orange">XML</a>
-  <a href="whatis_json.html" class="w3-bar-item w3-button w3-orange">JSON</a>
-  <a href="whatis_ajax.html" class="w3-bar-item w3-button w3-orange">AJAX</a>
-</div>
-</div>
-</div>
+<div class="w3-note w3-panel">
+<p>Узнайте больше об адаптивном веб-дизайне в <a href="../css/css_rwd_intro.html">Учебнике по адаптивному веб-дизайну</a><br></p>
 </div>
 
 <hr>
-<div class="w3-dark-grey w3-card-4" style="padding:16px 16px 32px 16px">
-<div class="w3-container w3-center">
-<h1>ШАГ 3<br>Выберите фреймворки</h1>
+<h2>Адаптивные изображения</h2>
+<p>Адаптивные изображения - это изображения, которые хорошо масштабируются под любой размер браузера.</p>
+<p>Когда для CSS свойства width установлено значение в процентах, изображение будет увеличиваться и уменьшаться при изменении размера окна браузера.</p>
+<p>Это изображение адаптивно:</p>
+<img src="img_girl.jpg" alt="Адаптивное изображение" style="width:100%;height:auto;">
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img
+  src=&quot;img_girl.jpg&quot; style=&quot;width:80%;height:auto;&quot;&gt;
 </div>
-<div class="w3-panel w3-white w3-card">
-<p>Теперь пришло время взглянуть на некоторые <b>фреймворки</b>.</p>
-<p>На стороне <b>CSS</b> вы должны выбрать платформу для создания адаптивного веб-дизайна:<br>
-<b>Bootstrap</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>Material Design</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>W3.CSS</b></p>
-<p>Со стороны <b>JavaScript</b> вы должны изучить хотя бы один современный фреймворк:<br>
-<b>React.js</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>Angular.js</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>Vue.js</b>
-&nbsp;&nbsp;/&nbsp;&nbsp;<b>W3.JS</b></p>
-<p>Возможно, популярность <b>jQuery</b> достигла вершины, но это всё ещё самый используемый фреймворк JavaScript в Интернете. Ему также следует уделить внимание.</p>
+<a class="w3-btn w3-margin-bottom" href="tryit64e7.html?filename=trywhatis_responsive_image" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 
-<div class="w3-row-padding" style="margin:0 -16px">
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">CSS</h2>
-  <a href="whatis_bootstrap.html" class="w3-bar-item w3-button w3-orange">Bootstrap</a>
-  <a href="whatis_w3css.html" class="w3-bar-item w3-button w3-orange">W3.CSS</a>
+<p>Если свойство <code class="w3-codespan">max-width</code> установлено на 100%, изображение будет уменьшаться, если это необходимо, но никогда не будет увеличиваться до размера, превышающего его исходный размер:</p>
+
+<img src="img_girl.jpg" alt="Адаптивное изображение" style="max-width:80%;height:auto;">
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;img_girl.jpg&quot; style=&quot;max-width:100%;height:auto;&quot;&gt;
 </div>
-</div>
-<div class="w3-third">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">JavaScript</h2>
-  <a class="w3-bar-item w3-button w3-orange" href="whatis_jquery.html">jQuery</a>
-  <a href="whatis_angularjs.html" class="w3-bar-item w3-button w3-orange">AngularJS</a>
-  <a href="whatis_vue.html" class="w3-bar-item w3-button w3-orange">Vue.js</a>
-  <a href="whatis_w3js.html" class="w3-bar-item w3-button w3-orange">W3.JS</a>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-card-4 w3-bar-block w3-white">
-  <h2 class="w3-bar-item">XML</h2>
-  <a href="../xml/xsl_intro.html" class="w3-bar-item w3-button w3-orange">XSLT</a>
-  <a href="../xml/xpath_intro.html" class="w3-bar-item w3-button w3-orange">XPath</a>
-  <a href="../xml/xquery_intro.html" class="w3-bar-item w3-button w3-orange">XQuery</a>
-</div>
-</div>
-</div>
+<a class="w3-btn w3-margin-bottom" href="tryit8e80.html?filename=trywhatis_responsive_image_max" target="_blank">Попробуйте сами &raquo;</a>
 </div>
 <hr>
-<p><img alt="Roadmap" src="img_frontend.jpg" style="width:100%"></p>
-<p class="w3-center">Диаграмма, созданная GitHub пользователем Kamranahmedse:
-<a target="_blank" href="https://github.com/kamranahmedse"><br>https://github.com/kamranahmedse</a></p>
 
-<hr>
-<h1 class="w3-center">Дорожные карты для бэкэнд-разработки (Back-End)</h1>
-<div class="w3-black w3-card-4" style="padding:16px 16px 32px 16px">
-<h1 class="w3-center">ШАГ 4<br>Дорожные карты бэкэнда</h1>
+<h2>Изображение в зависимости от размера браузера</h2>
+<p>HTML элемент <code class="w3-codespan">&lt;picture&gt;</code> позволяет определять разные изображения для разных размеров окна браузера.</p>
 
-<div class="w3-row-padding" style="margin:0 -16px 0 -16px">
-
-<div class="w3-half">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">Fullstack (полный набор)</h2>
-  <a href="../sql/default.html" class="w3-bar-item w3-button w3-orange">SQL</a>
-  <a href="../php/default.html" class="w3-bar-item w3-button w3-orange">PHP</a>
-  <a href="../asp/default.html" class="w3-bar-item w3-button w3-orange">ASP</a>
-  <a href="../python/default.html" class="w3-bar-item w3-button w3-orange">Python</a>
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;picture&gt;<br>&nbsp; &lt;source srcset=&quot;img_smallflower.jpg&quot; media=&quot;(max-width:
+  600px)&quot;&gt;<br>&nbsp; &lt;source srcset=&quot;img_flowers.jpg&quot; media=&quot;(max-width:
+  1500px)&quot;&gt;<br>&nbsp; &lt;source srcset=&quot;flowers.jpg&quot;&gt;<br>&nbsp; &lt;img src=&quot;img_smallflower.jpg&quot;
+  alt=&quot;Flowers&quot;&gt;<br>&lt;/picture&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitee9b.html?filename=trywhatis_responsive_picture" target="_blank">Попробуйте сами &raquo;</a>
 </div>
-</div>
-
-<div class="w3-half">
-<div class="w3-bar-block w3-white">
-  <h2 class="w3-bar-item">Fullstack JS (полный набор JavaScript)</h2>
-  <a href="../sql/default.html" class="w3-bar-item w3-button w3-orange">SQL</a>
-  <a href="../nodejs/default.html" class="w3-bar-item w3-button w3-orange">Node.js</a>
-  <a href="../nodejs/nodejs_mysql.html" class="w3-bar-item w3-button w3-orange">MySQL</a>
-  <a href="../nodejs/nodejs_mongodb.html" class="w3-bar-item w3-button w3-orange">Mongo.db</a>
-</div>
-</div>
-</div>
-</div>
-
-<img alt="Roadmap" src="img_backend.jpg" style="width:100%">
-<p class="w3-center">Диаграмма, созданная GitHub пользователем Kamranahmedse:
-<a target="_blank" href="https://github.com/kamranahmedse"><br>https://github.com/kamranahmedse</a></p>
 <hr>
 
-<h3>Что требуется для любого направления веб-разработки?</h3>
-<p>Это знания и навыки:</p>
-<ul>
-  <li>Git - система контроля версий</li>
-  <li>Основы использование терминала</li>
-  <li>Структуры данных и алгоритмы</li>
-  <li>GutHub. Создание репозиториев</li>
-  <li>Семантическое управление версиями</li>
-  <li>SSH, HTTP/HTTPS и API</li>
-  <li>Шаблоны проектирования</li>
-  <li>Кодировка символов</li>
-</ul>
+<h2>Адаптивный W3.CSS</h2>
+<p><strong>W3.CSS</strong> - это бесплатный CSS Framework, который по умолчанию предлагает адаптивный дизайн.</p>
+<p>W3.CSS позволяет легко создавать сайты, которые хорошо выглядят на любом устройстве; настольный компьютер, ноутбук, планшет или смартфон:</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;meta name=&quot;viewport&quot;
+ content=&quot;width=device-width, initial-scale=1&quot;&gt;<br>&lt;link rel=&quot;stylesheet&quot;
+ href=&quot;https://www.w3schools.com/w3css/4/w3.css&quot;&gt;<br>&lt;body&gt;<br><br>&lt;div class=&quot;w3-center w3-padding-64 w3-light-grey&quot;&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Моя W3.CSS Страница&lt;/h1&gt;<br>
+&nbsp; &lt;p&gt;Измените размер этой страницы, чтобы увидеть адаптивный эффект!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div
+ class=&quot;w3-row-padding&quot;&gt;<br>&nbsp; &lt;div class=&quot;w3-third&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h2&gt;Лондон&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Лондон является столицей Англии.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Это самый густонаселенный город в Соединенном Королевстве,<br>&nbsp;&nbsp;&nbsp; с агломерацией более 13 миллионов жителей.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br><br>&nbsp; &lt;div
+ class=&quot;w3-third&quot;&gt;<br>&nbsp;&nbsp;&nbsp; &lt;h2&gt;Париж&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Париж - столица Франции.&lt;/p&gt; <br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Район Парижа является одним из крупнейших населенных пунктов в Европе,<br>&nbsp;&nbsp;&nbsp; с более чем 12 миллионами жителей.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br><br>&nbsp; &lt;div class=&quot;w3-third&quot;&gt;<br>&nbsp;&nbsp;&nbsp;
+ &lt;h2&gt;Токио&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Токио - столица Японии.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;p&gt;Это центр Большого Токио,<br>&nbsp;&nbsp;&nbsp; и самый густонаселенный мегаполис в мире.&lt;/p&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>
+ &lt;/html&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryitc5be.html?filename=trywhatis_w3css&amp;stacked=h" target="_blank">Попробуйте сами &raquo;</a>
+</div>
+<p>Чтобы узнать больше о W3.CSS, перейдите на наш <a href="../w3css/default.html">W3.CSS Учебник</a>.</p>
+<hr>
+
+<h2>Адаптивный Bootstrap</h2>
+<p><strong>Bootstrap</strong> - очень популярный фреймворк, использующий HTML, CSS и jQuery для создания адаптивных веб-страниц.</p>
+
+<div class="w3-example">
+<h3>Пример</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;head&gt;<br>&lt;title&gt;Bootstrap
+  Пример&lt;/title&gt;<br>&lt;meta charset=&quot;utf-8&quot;&gt;<br>&lt;meta name=&quot;viewport&quot;
+  content=&quot;width=device-width, initial-scale=1&quot;&gt;<br>&lt;link rel=&quot;stylesheet&quot;
+  href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css&quot;&gt;<br>
+  &lt;script
+  src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;&gt;&lt;/script&gt;<br>
+  &lt;script
+  src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&quot;&gt;&lt;/script&gt;<br>
+  &lt;script
+  src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;<br>
+  &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;div class=&quot;jumbotron text-center&quot;&gt;<br>&nbsp; &lt;h1&gt;Моя первая Bootstrap Страница&lt;/h1&gt;<br>&nbsp; &lt;p&gt;Измените размер этой адаптивной страницы, чтобы увидеть эффект!&lt;/p&gt; <br>&lt;/div&gt;<br><br>&lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp; &lt;div class=&quot;row&quot;&gt;<br>&nbsp;&nbsp;&nbsp;
+  &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp; &nbsp;&nbsp;&nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp; &lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; &lt;p&gt;It is the most populous city in the United Kingdom,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with a
+ metropolitan area of over 13 million inhabitants.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;
+  &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&nbsp; &nbsp;&nbsp;&nbsp; &lt;h2&gt;Paris&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; &lt;p&gt;Paris is
+ the capital of France.&lt;/p&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;The Paris area is one of the largest
+ population centers in Europe,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with more than 12 million
+ inhabitants.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div
+  class=&quot;col-sm-4&quot;&gt;<br>&nbsp; &nbsp;&nbsp;&nbsp;
+ &lt;h2&gt;Tokyo&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp; &nbsp; &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;It
+ is the center of the Greater Tokyo Area,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and the most populous
+ metropolitan area in the world.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;
+  &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+<a target="_blank" href="tryit5191.html?filename=trywhatis_bootstrap&amp;stacked=h" class="w3-btn w3-margin-bottom">Попробуйте сами &raquo;</a>
+</div>
+<p>Чтобы узнать больше о Bootstrap, перейдите на наш <a href="../bootstrap4/default.html">Bootstrap Учебник</a>.</p>
 
 <hr>
 <div class="w3-clear nextprev">
-<a class="w3-left w3-btn" href="../default.html">&#10094; Home</a>
-<a class="w3-right w3-btn" href="whatis_http.html">Next &#10095;</a>
+<a class="w3-left w3-btn w3-green" href="whatis_css.html">&#10094; Prev</a>
+<a class="w3-right w3-btn w3-green" href="whatis_js.html">Next &#10095;</a>
 </div>
 
 <hr>
@@ -461,7 +449,7 @@
 <script>
 var disqus_config = function () {
 this.page.url = w3schoolsrus.github.io; // канонический URL страницы
-this.page.identifier = w3schoolsrus.github.io / whatis / default.html; // уникальный идентификатор страницы
+this.page.identifier = w3schoolsrus.github.io / whatis / whatis_responsive.html; // уникальный идентификатор страницы
 };
 (function() { // Не редактировать ниже этой линии
 var d = document, s = d.createElement('script');
@@ -482,7 +470,7 @@ s.setAttribute('data-timestamp', +new Date());
 <div class="sidesection w3-light-grey" style="padding-bottom: 5px">
 <h4><a href="../colors/colors_picker.html">ПАЛИТРА ЦВЕТОВ</a></h4>
 <a href="../colors/colors_picker.html">
-<img src="../images/colorpicker.gif" alt="colorpicker"></a>
+<img src="../images/colorpicker.gif" alt="Палитра цветов"></a>
 </div>
 
 <div class="sidesection" id="moreAboutSubject">

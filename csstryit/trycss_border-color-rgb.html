@@ -64,17 +64,30 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+p.one {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* красная */
+}
+
+p.two {
+  border-style: solid;
+  border-color: rgb(0, 0, 255); /* синяя */
+}
+
+p.three {
+  border-style: solid;
+  border-color: rgb(187, 187, 187); /* серая */
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Свойство border-color</h2>
+<p>Цвет границы также можно указать с помощью значений RGB:</p>
 
-<h1>Это заголовок</h1>
+<p class="one">Сплошная красная граница</p>
+<p class="two">Сплошная синяя граница</p>
+<p class="three">Сплошная серая граница</p>
 
 </body>
 </html>

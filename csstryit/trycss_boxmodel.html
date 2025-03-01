@@ -64,17 +64,22 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Демонстрация блочной модели</h2>
 
-<h1>Это заголовок</h1>
+<p>CSS Блочная модель - это, по сути, блок, который охватывает каждый HTML элемент. Он состоит из: границ, отступов, полей и фактического содержимого.</p>
+
+<div>Этот бессмысленный текст является содержимым блока. Мы добавили отступ 50 пикселей, поле 20 пикселей и зеленую границу 15 пикселей. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
 </body>
 </html>

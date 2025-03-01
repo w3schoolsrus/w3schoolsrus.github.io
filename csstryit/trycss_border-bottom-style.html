@@ -64,17 +64,29 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
-}
+p {border-style: solid;}
+p.none {border-bottom-style: none;}
+p.dotted {border-bottom-style: dotted;}
+p.dashed {border-bottom-style: dashed;}
+p.solid {border-bottom-style: solid;}
+p.double {border-bottom-style: double;}
+p.groove {border-bottom-style: groove;}
+p.ridge {border-bottom-style: ridge;}
+p.inset {border-bottom-style: inset;}
+p.outset {border-bottom-style: outset;}
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
-
-<h1>Это заголовок</h1>
+<p class="none">Без нижней границы.</p>
+<p class="dotted">Точечная нижняя граница.</p>
+<p class="dashed">Пунктирная нижняя граница.</p>
+<p class="solid">Сплошная нижняя граница.</p>
+<p class="double">Двойная нижняя граница.</p>
+<p class="groove">Рифленая нижняя граница.</p>
+<p class="ridge">Ребристая нижняя граница.</p>
+<p class="inset">Внутренняя нижняя граница.</p>
+<p class="outset">Наружная нижняя граница.</p>
 
 </body>
 </html>

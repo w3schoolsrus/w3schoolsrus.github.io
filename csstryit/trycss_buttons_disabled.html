@@ -64,17 +64,32 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Отключенные кнопки</h2>
+<p>Используйте свойство opacity, чтобы добавить прозрачности кнопке (чтобы она выглядела отключенной):</p>
 
-<h1>Это заголовок</h1>
+<button class="button">Обычная кнопка</button>
+<button class="button disabled">Отключенная кнопка</button>
 
 </body>
 </html>

@@ -64,17 +64,25 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+h1 {
+  background-color: green;
+}
+div {
+  background-color: lightblue;
+}
+p {
+  background-color: yellow;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
-
-<h1>Это заголовок</h1>
+<h1>CSS background-color пример!</h1>
+<div>
+Это текст внутри элемента div.
+<p>Этот параграф имеет собственный цвет фона.</p>
+Мы все ещё находимся в элементе div.
+</div>
 
 </body>
 </html>

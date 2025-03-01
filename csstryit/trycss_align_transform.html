@@ -64,17 +64,30 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+.center {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Центрирование</h2>
+<p>В этом примере мы используем позиционирование и свойство transform для вертикального и горизонтального центрирования элемента div:</p>
 
-<h1>Это заголовок</h1>
+<div class="center">
+  <p>Я вертикально и горизонтально центрирован.</p>
+</div>
 
 </body>
 </html>

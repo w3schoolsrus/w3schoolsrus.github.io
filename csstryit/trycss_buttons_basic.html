@@ -64,17 +64,28 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>CSS Кнопки</h2>
 
-<h1>Это заголовок</h1>
+<button>Кнопка по умолчанию</button>
+<a href="#" class="button">Кнопка ссылка</a>
+<button class="button">Кнопка</button>
+<input type="button" class="button" value="Кнопка ввода">
 
 </body>
 </html>

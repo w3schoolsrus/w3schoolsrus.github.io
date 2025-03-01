@@ -64,17 +64,51 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Свойство border-width</h2>
+<p>Это свойство определяет ширину четырех границ:</p>
 
-<h1>Это заголовок</h1>
+<p class="one">Какой-то текст.</p>
+<p class="two">Какой-то текст.</p>
+<p class="three">Какой-то текст.</p>
+<p class="four">Какой-то текст.</p>
+<p class="five">Какой-то текст.</p>
+<p class="six">Какой-то текст.</p>
+
+<p><b>Примечание:</b> Свойство "border-width" не работает, если оно используется отдельно.
+Всегда указывайте свойство "border-style", чтобы сначала установить границы.</p>
 
 </body>
 </html>

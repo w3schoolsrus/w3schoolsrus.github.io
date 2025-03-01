@@ -64,17 +64,19 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Изображение по центру</h2>
+<p>Чтобы центрировать изображение, установите для левого и правого поля значение auto и превратите его в блочный элемент.</p>
 
-<h1>Это заголовок</h1>
+<img src="../images/paris.jpg" alt="Париж" style="width:40%">
 
 </body>
 </html>

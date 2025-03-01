@@ -64,17 +64,34 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+p.one {
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+p.two {
+  border-style: solid;
+  border-color: #ff0000 #0000ff;
+}
+
+p.three {
+  border-style: solid;
+  border-color: #ff0000 #00ff00 #0000ff;
+}
+
+p.four {
+  border-style: solid;
+  border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
-
-<h1>Это заголовок</h1>
+<p class="one">Одноцветная граница!</p>
+<p class="two">Двухцветная граница!</p>
+<p class="three">Трехцветная граница!</p>
+<p class="four">Четырехцветная граница!</p>
+<p><b>Note:</b> Свойство "border-color" не работает, если оно используется отдельно. Используйте свойство "border-style", чтобы сначала установить границы.</p>
 
 </body>
 </html>

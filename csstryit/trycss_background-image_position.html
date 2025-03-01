@@ -64,17 +64,20 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+body {
+  background-image: url("../images/img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
-
-<h1>Это заголовок</h1>
+<h1>Hello World!</h1>
+<p>Фон не повторяется, показан пример позиции.</p>
+<p>Фоновое изображение отображается только один раз и располагается вдали от текста.</p>
+<p>В этом примере мы также добавили поле с правой стороны, чтобы фоновое изображение никогда не мешало тексту.</p>
 
 </body>
 </html>

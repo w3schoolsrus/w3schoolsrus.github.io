@@ -62,19 +62,19 @@
                 <!--Код на странице-->
                 <textarea autocomplete='off' id='textareaCode' wrap='soft' spellcheck='false'><!DOCTYPE html>
 <html>
-<head>
-<style>
-h1::after {
-  content: url(../images/smiley.gif);
-}
-</style>
-</head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<p>То же, что и название цвета "Tomato":</p>
 
-<h1>Это заголовок</h1>
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>То же, что и название цвета "Tomato", но на 50% прозрачнее:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+<p>В дополнение к предопределенным названиям цветов, цвета могут быть указаны с использованием RGB, HEX, HSL или даже прозрачных цветов с использованием значений цвета RGBA или HSLA.</p>
 
 </body>
 </html>

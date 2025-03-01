@@ -64,17 +64,37 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+.button {
+  background-color: #4CAF50; /* Зеленый */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Тени кнопок</h2>
+<p>Используйте свойство box-shadow, чтобы добавить тени к кнопке:</p>
 
-<h1>Это заголовок</h1>
+<button class="button button1">Кнопка с тенью</button>
+<button class="button button2">Тень при наведении</button>
 
 </body>
 </html>

@@ -64,17 +64,15 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+p {
+  border-style: solid;
+  border-left-width: 15px;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
-
-<h1>Это заголовок</h1>
+<p><b>Примечание:</b> Свойство "border-left-width" не работает, если оно используется отдельно. Используйте свойство "border-style", чтобы сначала установить границы.</p>
 
 </body>
 </html>

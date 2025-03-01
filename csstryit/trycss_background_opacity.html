@@ -64,17 +64,40 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+div {
+  background-color: green;
+}
+div.first {
+  opacity: 0.1;
+}
+div.second {
+  opacity: 0.3;
+}
+div.third {
+  opacity: 0.6;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h1>Прозрачный блок</h1>
+<p>При использовании свойства opacity для добавления прозрачности к фону элемента все его дочерние элементы также становятся прозрачными. Это может затруднить чтение текста внутри полностью прозрачного элемента:</p>
 
-<h1>Это заголовок</h1>
+<div class="first">
+  <h1>opacity 0.1</h1>
+</div>
+
+<div class="second">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (по умолчанию)</h1>
+</div>
 
 </body>
 </html>

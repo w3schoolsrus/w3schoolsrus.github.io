@@ -64,17 +64,37 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+body {
+  text-align: center;
+}
+/* Четыре значения */
+p.four {
+  border-style: dotted solid double dashed;
+}
+
+/* Три значения */
+p.three {
+  border-style: dotted solid double;
+}
+
+/* Два значения */
+p.two {
+  border-style: dotted solid;
+}
+
+/* Одно значение */
+p.one {
+  border-style: dotted;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
-
-<h1>Это заголовок</h1>
+<h2>Отдельные стороны границы</h2>
+<p class="four">4 разных стиля границ.</p>
+<p class="three">3 разных стиля границы.</p>
+<p class="two">2 разных стиля границы.</p>
+<p class="one">1 стиль границы.</p>
 
 </body>
 </html>

@@ -64,17 +64,35 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+p.normal {
+  border: 2px solid red;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Свойство border-radius</h2>
+<p>Это свойство используется для добавления закругленных границ к элементу:</p>
 
-<h1>Это заголовок</h1>
+<p class="normal">Обычная граница</p>
+<p class="round1">Круглая граница</p>
+<p class="round2">Закругленная граница</p>
+<p class="round3">Более закругленная граница</p>
 
 </body>
 </html>

@@ -63,18 +63,38 @@
                 <textarea autocomplete='off' id='textareaCode' wrap='soft' spellcheck='false'><!DOCTYPE html>
 <html>
 <head>
+
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
-}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
 </style>
+
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Свойство border-style</h2>
+<p>Это свойство указывает, какую границу отображать:</p>
 
-<h1>Это заголовок</h1>
+<p class="dotted">Точечная граница.</p>
+<p class="dashed">Пунктирная граница.</p>
+<p class="solid">Сплошная граница.</p>
+<p class="double">Двойная граница.</p>
+<p class="groove">Рифлёная граница.</p>
+<p class="ridge">Ребристая граница.</p>
+<p class="inset">Вставная граница.</p>
+<p class="outset">Выпуклая граница.</p>
+<p class="none">Нет границы.</p>
+<p class="hidden">Скрытая граница.</p>
+<p class="mix">Смешанная граница.</p>
 
 </body>
 </html>

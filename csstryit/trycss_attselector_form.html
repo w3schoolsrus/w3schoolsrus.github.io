@@ -64,17 +64,29 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+input[type=text] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type=button] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Стилизация формы</h2>
 
-<h1>Это заголовок</h1>
+<form name="input" action="" method="get">
+  Имя:<input type="text" name="Name" value="Peter" size="20">
+  Фамилия:<input type="text" name="Name" value="Griffin" size="20">
+  <input type="button" value="Пример кнопки">
+</form>
 
 </body>
 </html>

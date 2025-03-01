@@ -64,17 +64,39 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
 
-<h1>Это заголовок</h1>
+<h1>HTML учебники:</h1>
+<h2>HTML Учебник</h2>
+<h2>CSS Учебник</h2>
+
+<h1>Учебники по написанию скриптов:</h1>
+<h2>JavaScript</h2>
+<h2>VBScript</h2>
+
+<h1>XML учебники:</h1>
+<h2>XML</h2>
+<h2>XSL</h2>
 
 </body>
 </html>

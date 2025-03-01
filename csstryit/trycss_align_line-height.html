@@ -64,17 +64,28 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+.center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Центрирование</h2>
+<p>В этом примере мы используем свойство line-height со значением, равным свойству height, для центрирования элемента div:</p>
 
-<h1>Это заголовок</h1>
+<div class="center">
+  <p>Я вертикально и горизонтально центрирован.</p>
+</div>
 
 </body>
 </html>

@@ -64,17 +64,59 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+div {
+  background: rgb(0, 128, 0);
+}
+div.first {
+  background: rgba(0, 128, 0, 0.1);
+}
+div.second {
+  background: rgba(0, 128, 0, 0.3);
+}
+div.third {
+  background: rgba(0, 128, 0, 0.6);
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h1>Прозрачный блок</h1>
+<p>Из opacity:</p>
 
-<h1>Это заголовок</h1>
+<div style="opacity:0.1;">
+  <h1>10% opacity</h1>
+</div>
+
+<div style="opacity:0.3;">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="opacity:0.6;">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>opacity 1</h1>
+</div>
+
+<p>Из значением цвета RGBA:</p>
+<div class="first">
+  <h1>10% opacity</h1>
+</div>
+
+<div class="second">
+  <h1>30% opacity</h1>
+</div>
+
+<div class="third">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>По умолчанию</h1>
+</div>
+
+<p>Обратите внимание на то, как текст становится прозрачным, а также цвет фона при использовании свойства opacity (непрозрачности).</p>
 
 </body>
 </html>

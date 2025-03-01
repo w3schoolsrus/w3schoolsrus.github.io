@@ -64,17 +64,22 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Выровнять элементы по центру</h2>
+<p>Чтобы горизонтально центрировать элемент блока (например, div), используйте margin: auto;</p>
 
-<h1>Это заголовок</h1>
+<div class="center">
+  <p>Hello World!</p>
+</div>
 
 </body>
 </html>

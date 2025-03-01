@@ -64,17 +64,30 @@
 <html>
 <head>
 <style>
-h1::after {
-  content: url(../images/smiley.gif);
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5 пикселей сверху и снизу, 20 пикселей по бокам */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20 пикселей сверху и снизу, по 5 пикселей по бокам */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25 пикселей вверху, 10 пикселей справа, 4 пикселя внизу и 35 пикселей слева */
 }
 </style>
 </head>
 <body>
 
-<h1>Это заголовок</h1>
-<p>Псевдоэлемент ::after вставляет содержимое после содержимого элемента.</p>
+<h2>Свойство border-width</h2>
+<p>Свойство border-width может иметь от одного до четырех значений (для верхней границы, правой границы, нижней границы и левой границы):</p>
 
-<h1>Это заголовок</h1>
+<p class="one">Какой-то текст.</p>
+<p class="two">Какой-то текст.</p>
+<p class="three">Какой-то текст.</p>
 
 </body>
 </html>
